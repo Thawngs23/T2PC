@@ -12,7 +12,8 @@ app.set('views',path.join(__dirname,'resources/views'))
 app.get('/', (req, res) => {
   res.render('home')
 })
-
+//sử dụng file tĩnh
+app.use(express.static(path.join(__dirname, 'public')))
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
