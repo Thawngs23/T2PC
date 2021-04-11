@@ -1,5 +1,21 @@
 @import'var';
 
-h1{
-    background-color: $main-color;
+#headermenu {
+    background-image: linear-gradient(to right,$main-color , $tim-nhat);
+    height: 80px;
+    margin-bottom: 30px;
+    .img-fluid{
+        // height: 60px;
+        margin-top: 4px;
+        width: auto;
+    }
+    .thanh-tim-kiem{
+        width: 50%;
+        height: 40px;
+       margin-left: 40px;
+       .btn{
+           background-color: white;
+           color: $main-color;
+       }
+    }
 }

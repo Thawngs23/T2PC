@@ -1,2 +1,14 @@
-h1 {
-  background-color: green; }
+#headermenu {
+  background-image: linear-gradient(to right, #9241ee, #a634f1);
+  height: 80px;
+  margin-bottom: 30px; }
+  #headermenu .img-fluid {
+    margin-top: 4px;
+    width: auto; }
+  #headermenu .thanh-tim-kiem {
+    width: 50%;
+    height: 40px;
+    margin-left: 40px; }
+    #headermenu .thanh-tim-kiem .btn {
+      background-color: white;
+      color: #9241ee; }
