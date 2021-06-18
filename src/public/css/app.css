@@ -1,15 +1,137 @@
-#headermenu {
-  background-image: linear-gradient(to right, #9241ee, #a634f1);
-  height: 80px;
-  margin-bottom: 30px; }
-  #headermenu .img-fluid {
-    margin-top: 4px;
-    width: auto; }
-  #headermenu .thanh-tim-kiem {
-    width: 50%;
-    height: 40px;
-    margin-left: 40px; }
-    #headermenu .thanh-tim-kiem .btn {
-      background-color: white;
-      color: #9241ee;
-      background-image: none; }
+#header {
+  width: 100%;
+  background-color: #49b14d; }
+  #header .size {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; }
+  #header .header-link {
+    border-bottom: 1px solid white; }
+    #header .header-link .header-static {
+      display: flex; }
+      #header .header-link .header-static div {
+        color: white; }
+      #header .header-link .header-static a {
+        color: white;
+        margin-left: 20px;
+        font-size: 16px; }
+        #header .header-link .header-static a .fa-facebook-f {
+          font-size: 15px; }
+      #header .header-link .header-static a:hover {
+        color: yellow; }
+    #header .header-link .header-link-right a {
+      text-decoration: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 15px; }
+      #header .header-link .header-link-right a .fa-sign-in-alt {
+        font-size: 16px; }
+    #header .header-link .header-link-right .sign-in {
+      margin-right: 10px; }
+    #header .header-link .header-link-right a:hover {
+      color: yellow; }
+  #header .header-main .logo img {
+    display: block;
+    max-width: 200px;
+    max-height: 60px;
+    width: auto;
+    height: auto; }
+  #header .header-main .search input {
+    padding: 10px 10px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 5px; }
+  #header .header-main .sdt {
+    display: flex; }
+    #header .header-main .sdt .hotline {
+      display: flex;
+      margin-right: 30px; }
+      #header .header-main .sdt .hotline img {
+        display: block;
+        max-width: 45px;
+        max-height: 45px;
+        width: auto;
+        height: auto;
+        margin-right: 10px; }
+      #header .header-main .sdt .hotline .phone-number {
+        line-height: 1; }
+        #header .header-main .sdt .hotline .phone-number p {
+          margin: 0;
+          font-family: Roboto; }
+        #header .header-main .sdt .hotline .phone-number .p1 {
+          color: white;
+          font-size: 15px; }
+        #header .header-main .sdt .hotline .phone-number .p2 {
+          color: yellow;
+          font-size: 23px; }
+  #header .header-main .cart {
+    position: relative;
+    display: inline-block; }
+    #header .header-main .cart a {
+      border-radius: 5px;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 15px; }
+      #header .header-main .cart a i {
+        font-size: inherit;
+        display: inline-block;
+        margin-top: 15px; }
+  #header .header-main .cart-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    padding: 50px 16px;
+    z-index: 1000;
+    animation-delay: 2s; }
+  #header .header-main .btn-cart {
+    display: flex;
+    justify-content: space-between; }
+  #header .header-main .cart:hover .cart-dropdown-content {
+    display: block; }
+
+#nav-bar {
+  width: 100%;
+  justify-content: left;
+  background-color: #eef0f7;
+  border: 0px 0px 1px 0px solid;
+  box-shadow: 0px 0px 3px 0px #aaa; }
+  #nav-bar .menu-nav-bar {
+    list-style: none;
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto; }
+    #nav-bar .menu-nav-bar .tilte-menu {
+      margin-left: 30px;
+      padding: 15px 0px; }
+      #nav-bar .menu-nav-bar .tilte-menu .t {
+        text-decoration: none;
+        color: #29324e;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        padding: 15px 0px; }
+      #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product {
+        display: none;
+        list-style: none;
+        line-height: 2.5;
+        padding: 10px 0px 0px 0px; }
+        #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a {
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #29324e; }
+          #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a .fa-angle-right {
+            padding-top: 10px;
+            padding-left: 10px;
+            float: right; }
+        #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a :hover {
+          color: white;
+          background-color: #49b14d; }
+    #nav-bar .menu-nav-bar .tilte-menu :hover {
+      color: #49b14d; }
+    #nav-bar .menu-nav-bar .product:hover .list-product {
+      display: inline-grid; }
