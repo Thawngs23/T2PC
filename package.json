@@ -1,33 +1,37 @@
 {
-  "name": "petshop",
-  "version": "1.0.0",
-  "description": "Web thương mại + dịch vụ về thú cưng",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "nodemon --inspect src/index.js",
-    "convert": "node-sass --watch src/resources/scss --output src/public/css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/QTienTLS/petshop.git"
-  },
-  "keywords": [
-    "nodejs",
-    "petshop"
-  ],
-  "author": "QTienTLS",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/QTienTLS/petshop/issues"
-  },
-  "homepage": "https://github.com/QTienTLS/petshop#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^5.3.0",
-    "nodemon": "^2.0.7"
-  },
-  "devDependencies": {
-    "node-sass": "^5.0.0",
-    "prettier": "2.2.1"
-  }
+    "name": "petshop",
+    "version": "1.0.0",
+    "description": "Web thương mại + dịch vụ về thú cưng",
+    "main": "src/index.js",
+    "scripts": {
+        "format": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss} ",
+        "test": "nodemon --inspect src/index.js",
+        "convert": "node-sass --watch src/resources/scss --output src/public/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/QTienTLS/petshop.git"
+    },
+    "keywords": [
+        "nodejs",
+        "petshop"
+    ],
+    "author": "QTienTLS",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/QTienTLS/petshop/issues"
+    },
+    "homepage": "https://github.com/QTienTLS/petshop#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.0",
+        "mongoose": "^5.12.14",
+        "nodemon": "^2.0.7"
+    },
+    "devDependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "node-sass": "^5.0.0",
+        "prettier": "^2.2.1"
+    }
 }

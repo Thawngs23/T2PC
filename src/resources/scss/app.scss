@@ -1,9 +1,9 @@
-@import'var';
+@import 'var';
 
-#header{
+#header {
     width: 100%;
     background-color: $main-color;
-    .size{
+    .size {
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -11,17 +11,17 @@
         padding: 10px 20px;
     }
 
-    .header-link{
-        .header-static{
+    .header-link {
+        .header-static {
             display: flex;
-            div{
+            div {
                 color: white;
             }
-            a{
+            a {
                 color: white;
                 margin-left: 20px;
                 font-size: 16px;
-                .fa-facebook-f{
+                .fa-facebook-f {
                     font-size: 15px;
                 }
             }
@@ -29,30 +29,30 @@
                 color: yellow;
             }
         }
-        
-        .header-link-right{
-            a{
+
+        .header-link-right {
+            a {
                 text-decoration: none;
                 color: white;
                 font-family: Roboto;
                 font-size: 15px;
-                .fa-sign-in-alt{
+                .fa-sign-in-alt {
                     font-size: 16px;
                 }
             }
-            .sign-in{
+            .sign-in {
                 margin-right: 10px;
             }
-            a:hover{
+            a:hover {
                 color: yellow;
             }
         }
         border-bottom: 1px solid white;
     }
 
-    .header-main{
-        .logo{
-            img{
+    .header-main {
+        .logo {
+            img {
                 display: block;
                 max-width: 200px;
                 max-height: 60px;
@@ -61,8 +61,8 @@
             }
         }
 
-        .search{    
-            input{
+        .search {
+            input {
                 padding: 10px 10px;
                 width: 350px;
                 border: none;
@@ -71,12 +71,12 @@
             }
         }
 
-        .sdt{
+        .sdt {
             display: flex;
-            .hotline{
+            .hotline {
                 display: flex;
                 margin-right: 30px;
-                img{
+                img {
                     display: block;
                     max-width: 45px;
                     max-height: 45px;
@@ -84,15 +84,18 @@
                     height: auto;
                     margin-right: 10px;
                 }
-                .phone-number{
+                .phone-number {
                     line-height: 1;
-                    p{
+                    p {
                         margin: 0;
                         font-family: Roboto;
                     }
-                    .p1{color: white;   
-                        font-size: 15px;}
-                    .p2{color: yellow;
+                    .p1 {
+                        color: white;
+                        font-size: 15px;
+                    }
+                    .p2 {
+                        color: yellow;
                         font-size: 23px;
                     }
                 }
@@ -102,32 +105,32 @@
         .cart {
             position: relative;
             display: inline-block;
-            a{
+            a {
                 border-radius: 5px;
                 border: 1px solid white;
                 color: white;
                 padding: 10px 15px;
-                i{
+                i {
                     font-size: inherit;
                     display: inline-block;
                     margin-top: 15px;
                 }
             }
         }
-          
+
         .cart-dropdown-content {
-        display: none;
-        // margin-right: 100px;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        min-width: 250px;
-        background-color: #f9f9f9;
-        padding: 50px 16px;
-        z-index: 1000;
-        animation-delay: 2s;
-        }  
-        .btn-cart{
+            display: none;
+
+            position: absolute;
+            top: 50px;
+            right: 0;
+            min-width: 250px;
+            background-color: #f9f9f9;
+            padding: 50px 16px;
+            z-index: 1000;
+            animation-delay: 2s;
+        }
+        .btn-cart {
             display: flex;
             justify-content: space-between;
         }
@@ -137,58 +140,58 @@
     }
 }
 
-#nav-bar{
+#nav-bar {
     width: 100%;
     justify-content: left;
     background-color: #eef0f7;
     border: 0px 0px 1px 0px solid;
     box-shadow: 0px 0px 3px 0px #aaa;
-    .menu-nav-bar{
+    .menu-nav-bar {
         list-style: none;
         display: flex;
         max-width: 90%;
         margin: 0 auto;
 
-        .tilte-menu{
+        .tilte-menu {
             margin-left: 30px;
             padding: 15px 0px;
- 
-            .t{
+
+            .t {
                 text-decoration: none;
                 color: $text-color;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: large;
                 padding: 15px 0px;
             }
-          
-            .detail-product{
-                .list-product{
+
+            .detail-product {
+                .list-product {
                     display: none;
                     list-style: none;
                     line-height: 2.5;
                     padding: 10px 0px 0px 0px;
-                    .a{
+                    .a {
                         text-decoration: none;
                         font-family: Arial, Helvetica, sans-serif;
                         color: $text-color;
-                        .fa-angle-right{
+                        .fa-angle-right {
                             padding-top: 10px;
                             padding-left: 10px;
                             float: right;
                         }
                     }
-                    .a :hover{
+                    .a :hover {
                         color: white;
                         background-color: #49b14d;
                     }
                 }
             }
         }
-        .tilte-menu :hover{
-            color: #49b14d;
+        .tilte-menu :hover {
+            color: $main-color;
         }
 
-        .product:hover .list-product{
+        .product:hover .list-product {
             display: inline-grid;
         }
     }
