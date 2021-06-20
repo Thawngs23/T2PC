@@ -128,12 +128,13 @@
         padding: 0;
         position: absolute;
         top: 100%;
-        width: 93%;
-        background-color: white; }
+        width: 100%;
+        background-color: bisque; }
         #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini {
-          width: 230px;
+          width: 13.5%;
           border-left: 1px solid cadetblue;
-          border-bottom: 1px solid cadetblue; }
+          border-bottom: 1px solid cadetblue;
+          min-width: 230px; }
           #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .link-mega-menu-mn {
             text-decoration: none;
             display: flex;
@@ -145,22 +146,23 @@
           #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf {
             display: none;
             padding: 0;
-            background-color: green;
             position: absolute;
+            width: 100%;
+            min-width: 230px;
             top: 0;
             left: 230px; }
             #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build {
-              position: static;
-              display: flex; }
-              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build .list-options-build {
-                background-color: yellowgreen;
-                list-style: none;
-                grid-template-columns: auto auto; }
-              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build img {
-                float: right; }
+              position: absolute;
+              display: flex;
+              width: 80.5%;
+              background-color: aquamarine; }
+        #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini:hover .build-conf {
+          display: block; }
         #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini:hover .link-mega-menu-mn {
           color: white;
           background-color: #29324e; }
+    #nav-bar .menu-nav-bar .tilte-menu-5 {
+      margin-right: 0; }
     #nav-bar .menu-nav-bar .tilte-menu:hover .link-tm {
       color: #49b14d; }
     #nav-bar .menu-nav-bar .product:hover .mega-menu {

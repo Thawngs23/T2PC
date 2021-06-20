@@ -178,13 +178,14 @@
                 padding: 0;
                 position: absolute;
                 top: 100%;
-                width: 93%;
-                background-color: white;
+                width: 100%;
+                background-color: bisque;
 
                 .mega-menu-mini{
-                    width: 230px;
+                    width: 13.5%;
                     border-left: 1px solid cadetblue;
                     border-bottom: 1px solid cadetblue;
+                    min-width: 230px;
                     // position: absolute;
                     .link-mega-menu-mn{
                         text-decoration: none;
@@ -200,39 +201,47 @@
                         display: none;
                         // max-width: 1000px;
                         // width: 1000px;
+                        // width: 80%;
                         padding: 0;
-                        background-color: green;
-                        position: absolute; 
+                        // background-color: green;
+                        position: absolute;
+                        width: 100%;
+                        min-width: 230px;
                         
                         top: 0;
                         left: 230px;
                         .main-build{
-                            // position: absolute;
-                            position: static;
+                            position: absolute;
+                            // position: static;
                             display: flex;
-                            .list-options-build{
-                                background-color: yellowgreen;
-                                // padding: 0;
-                                // width: 66%;
-                                list-style: none;
-                                // display: grid;
-                                grid-template-columns: auto auto;
-                            }
-                            img{
-                                float: right;
-                            }
+                            width: 80.5%;
+                            background-color: aquamarine;
+                            // .list-options-build{
+                            //     background-color: yellowgreen;
+                            //     // padding: 0;
+                            //     width: 66%;
+                            //     list-style: none;
+                            //     display: grid;
+                            //     grid-template-columns: auto auto;
+                            // }
+                            // img{
+                            //     float: right;
+                            // }
                         }
                     }
                 }
-                // .mega-menu-mini:hover .build-conf{
-                //     display: block;
-                // }
+                .mega-menu-mini:hover .build-conf{
+                    display: block;
+                }
 
                 .mega-menu-mini:hover .link-mega-menu-mn{
                     color: white;
                     background-color: $text-color;
                 }
             }
+        }
+        .tilte-menu-5{
+            margin-right: 0;
         }
         .tilte-menu:hover .link-tm{
             color: $main-color;
