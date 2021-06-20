@@ -1,1 +1,37 @@
-{{!-- <h1>Example App: Home</h1> --}}
+<div id="slide-event" class="carousel slide carousel-dark shadow" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    {{#each events}}
+    {{#if @first}}
+    <button type="button" data-bs-target="#slide-event" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    {{else}}
+    <button type="button" data-bs-target="#slide-event" data-bs-slide-to="{{@index}}" aria-label="Slide 2"></button>
+    {{/if}}
+    {{/each}}
+  </div>
+  <div class="carousel-inner">
+    {{#each events}}
+    {{#if @first}}
+    <div class="carousel-item active" data-bs-interval="3000">
+      <a href="{{this.link}}" target="_blank">
+        <img src="{{this.img}}" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    {{else}}
+    <div class="carousel-item" data-bs-interval="3000">
+      <a href="{{this.link}}" target="_blank">
+        <img src="{{this.img}}" class="d-block w-100" alt="...">
+      </a>
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#slide-event" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden ">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#slide-event" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
