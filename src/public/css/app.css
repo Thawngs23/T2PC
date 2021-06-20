@@ -1,8 +1,10 @@
 #header {
   width: 100%;
+  margin: 0 auto;
   background-color: #49b14d; }
   #header .size {
     width: 90%;
+    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -97,41 +99,69 @@
 
 #nav-bar {
   width: 100%;
+  margin: 0 auto;
   justify-content: left;
   background-color: #eef0f7;
-  border: 0px 0px 1px 0px solid;
-  box-shadow: 0px 0px 3px 0px #aaa; }
+  border: 0px 0px 1px 0px solid; }
   #nav-bar .menu-nav-bar {
+    width: 90%;
+    max-width: 1728px;
     list-style: none;
     display: flex;
-    max-width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     #nav-bar .menu-nav-bar .tilte-menu {
-      margin-left: 30px;
-      padding: 15px 0px; }
-      #nav-bar .menu-nav-bar .tilte-menu .t {
+      margin-right: 30px;
+      padding: 15px 0px;
+      position: static; }
+      #nav-bar .menu-nav-bar .tilte-menu .link-tm {
         text-decoration: none;
-        color: #063d08;
+        color: #29324e;
         font-family: Arial, Helvetica, sans-serif;
         font-size: large;
         padding: 15px 0px; }
-      #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product {
+      #nav-bar .menu-nav-bar .tilte-menu .mega-menu {
+        min-width: auto;
         display: none;
         list-style: none;
-        line-height: 2.5;
-        padding: 10px 0px 0px 0px; }
-        #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a {
-          text-decoration: none;
-          font-family: Arial, Helvetica, sans-serif;
-          color: #063d08; }
-          #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a .fa-angle-right {
-            padding-top: 10px;
-            padding-left: 10px;
-            float: right; }
-        #nav-bar .menu-nav-bar .tilte-menu .detail-product .list-product .a :hover {
+        color: #29324e;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: 93%;
+        background-color: white; }
+        #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini {
+          width: 230px;
+          border-left: 1px solid cadetblue;
+          border-bottom: 1px solid cadetblue; }
+          #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .link-mega-menu-mn {
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+            color: #29324e; }
+            #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .link-mega-menu-mn .fa-angle-right {
+              padding-top: 5px; }
+          #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf {
+            display: none;
+            padding: 0;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 230px; }
+            #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build {
+              position: static;
+              display: flex; }
+              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build .list-options-build {
+                background-color: yellowgreen;
+                list-style: none;
+                grid-template-columns: auto auto; }
+              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build img {
+                float: right; }
+        #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini:hover .link-mega-menu-mn {
           color: white;
-          background-color: #49b14d; }
-    #nav-bar .menu-nav-bar .tilte-menu :hover {
+          background-color: #29324e; }
+    #nav-bar .menu-nav-bar .tilte-menu:hover .link-tm {
       color: #49b14d; }
-    #nav-bar .menu-nav-bar .product:hover .list-product {
-      display: inline-grid; }
+    #nav-bar .menu-nav-bar .product:hover .mega-menu {
+      display: block; }
