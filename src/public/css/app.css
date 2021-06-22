@@ -1,171 +1,170 @@
 #header {
   width: 100%;
-  margin: 0 auto;
   background-color: #49b14d; }
-  #header .size {
-    width: 90%;
-    max-width: 1920px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px; }
-  #header .header-link {
-    border-bottom: 1px solid white; }
-    #header .header-link .header-static {
-      display: flex; }
-      #header .header-link .header-static div {
-        color: white; }
-      #header .header-link .header-static a {
-        color: white;
-        margin-left: 20px;
-        font-size: 16px; }
-        #header .header-link .header-static a .fa-facebook-f {
-          font-size: 15px; }
-      #header .header-link .header-static a:hover {
-        color: yellow; }
-    #header .header-link .header-link-right a {
-      text-decoration: none;
-      color: white;
-      font-family: Roboto;
-      font-size: 15px; }
-      #header .header-link .header-link-right a .fa-sign-in-alt {
-        font-size: 16px; }
-    #header .header-link .header-link-right .sign-in {
-      margin-right: 10px; }
-    #header .header-link .header-link-right a:hover {
-      color: yellow; }
-  #header .header-main .logo img {
-    display: block;
-    max-width: 200px;
-    max-height: 60px;
-    width: auto;
-    height: auto; }
-  #header .header-main .search input {
-    padding: 10px 10px;
-    width: 350px;
-    border: none;
-    outline: none;
-    border-radius: 5px; }
-  #header .header-main .sdt {
-    display: flex; }
-    #header .header-main .sdt .hotline {
+  #header #header-main {
+    max-width: 120em;
+    margin: 0 auto; }
+    #header #header-main .header-top {
+      max-width: 85%;
+      margin: 0 auto;
       display: flex;
-      margin-right: 30px; }
-      #header .header-main .sdt .hotline img {
-        display: block;
-        max-width: 45px;
-        max-height: 45px;
-        width: auto;
-        height: auto;
-        margin-right: 10px; }
-      #header .header-main .sdt .hotline .phone-number {
-        line-height: 1; }
-        #header .header-main .sdt .hotline .phone-number p {
-          margin: 0;
-          font-family: Roboto; }
-        #header .header-main .sdt .hotline .phone-number .p1 {
+      justify-content: space-between;
+      padding: 0.5em 0.3em;
+      border-bottom: white 1px solid; }
+      #header #header-main .header-top .social {
+        display: flex; }
+        #header #header-main .header-top .social .follow {
+          color: white; }
+        #header #header-main .header-top .social .social-network {
           color: white;
-          font-size: 15px; }
-        #header .header-main .sdt .hotline .phone-number .p2 {
-          color: yellow;
-          font-size: 23px; }
-  #header .header-main .cart {
-    position: relative;
-    display: inline-block; }
-    #header .header-main .cart a {
-      border-radius: 5px;
-      border: 1px solid white;
-      color: white;
-      padding: 10px 15px; }
-      #header .header-main .cart a i {
-        font-size: inherit;
-        display: inline-block;
-        margin-top: 15px; }
-  #header .header-main .cart-dropdown-content {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    min-width: 250px;
-    background-color: #f9f9f9;
-    padding: 50px 16px;
-    z-index: 1000;
-    animation-delay: 2s; }
-  #header .header-main .btn-cart {
-    display: flex;
-    justify-content: space-between; }
-  #header .header-main .cart:hover .cart-dropdown-content {
-    display: block; }
-
-#nav-bar {
-  width: 100%;
-  margin: 0 auto;
-  justify-content: left;
-  background-color: #eef0f7;
-  border: 0px 0px 1px 0px solid; }
-  #nav-bar .menu-nav-bar {
-    width: 90%;
-    max-width: 1728px;
-    list-style: none;
-    display: flex;
-    margin: 0 auto;
-    position: relative; }
-    #nav-bar .menu-nav-bar .tilte-menu {
-      margin-right: 30px;
-      padding: 15px 0px;
-      position: static; }
-      #nav-bar .menu-nav-bar .tilte-menu .link-tm {
+          margin-left: 1em; }
+        #header #header-main .header-top .social a:hover {
+          color: yellow; }
+      #header #header-main .header-top .login a {
         text-decoration: none;
-        color: #063d08;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: large;
-        padding: 15px 0px; }
-      #nav-bar .menu-nav-bar .tilte-menu .mega-menu {
-        min-width: auto;
-        display: none;
+        color: white;
+        font-family: Roboto;
+        font-size: 1em; }
+        #header #header-main .header-top .login a .fa-sign-in-alt {
+          font-size: 1em; }
+      #header #header-main .header-top .login .sign-in {
+        margin-right: 1em; }
+      #header #header-main .header-top .login a:hover {
+        color: yellow; }
+    #header #header-main .header-container {
+      max-width: 85%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 0.3em; }
+      #header #header-main .header-container .logo a img {
+        display: block;
+        max-width: 12.5em;
+        max-height: 3.75em;
+        width: auto;
+        height: auto; }
+      #header #header-main .header-container .search {
+        margin-top: 6px; }
+        #header #header-main .header-container .search form input {
+          padding: 0.7em 0.7em;
+          width: 22em;
+          border: none;
+          outline: none;
+          border-radius: 5px; }
+      #header #header-main .header-container .header-container-right {
+        display: flex; }
+        #header #header-main .header-container .header-container-right .hotline {
+          display: flex; }
+          #header #header-main .header-container .header-container-right .hotline img {
+            display: block;
+            max-width: 2.8em;
+            max-height: 2.8em;
+            width: auto;
+            height: auto;
+            margin: 0.5em 0.7em 0 0; }
+          #header #header-main .header-container .header-container-right .hotline .phone-number {
+            line-height: 1;
+            margin-top: 5px; }
+            #header #header-main .header-container .header-container-right .hotline .phone-number .p1 {
+              color: white;
+              font-size: 1em;
+              margin-bottom: 0; }
+            #header #header-main .header-container .header-container-right .hotline .phone-number .p2 {
+              color: yellow;
+              font-size: 2em;
+              margin-bottom: 0; }
+        #header #header-main .header-container .header-container-right .cart {
+          margin-left: 1em; }
+          #header #header-main .header-container .header-container-right .cart a {
+            border-radius: 5px;
+            border: 1px solid white;
+            color: white;
+            padding: 0.7em 1em; }
+            #header #header-main .header-container .header-container-right .cart a i {
+              font-size: inherit;
+              display: inline-block;
+              margin-top: 1.4em; }
+  #header #nav-bar {
+    width: 100%;
+    background-color: #eef0f7; }
+    #header #nav-bar .menu-nav-bar {
+      margin: 0 auto;
+      max-width: 120em; }
+      #header #nav-bar .menu-nav-bar .list-menu {
+        margin: 0 auto;
+        width: 90%;
+        display: flex;
         list-style: none;
-        color: #063d08;
-        padding: 0;
-        z-index: 10;
-        position: absolute;
-        top: 100%;
-        width: 93%;
-        background-color: white; }
-        #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini {
-          width: 230px;
-          border-left: 1px solid cadetblue;
-          border-bottom: 1px solid cadetblue; }
-          #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .link-mega-menu-mn {
+        position: relative; }
+        #header #nav-bar .menu-nav-bar .list-menu .tilte-menu {
+          padding: 0.7em 0;
+          margin-right: 3em; }
+          #header #nav-bar .menu-nav-bar .list-menu .tilte-menu a {
+            padding: 1em 0;
             text-decoration: none;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 10px;
-            color: #063d08; }
-            #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .link-mega-menu-mn .fa-angle-right {
-              padding-top: 5px; }
-          #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf {
+            color: #29324e;
+            font-weight: unset; }
+          #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu {
             display: none;
-            padding: 0;
-            background-color: green;
+            list-style: none;
             position: absolute;
-            top: 0;
-            left: 230px; }
-            #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build {
-              position: static;
-              display: flex; }
-              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build .list-options-build {
-                background-color: yellowgreen;
-                list-style: none;
-                grid-template-columns: auto auto; }
-              #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini .build-conf .main-build img {
+            background-color: white;
+            top: 100%;
+            width: 92%;
+            padding-left: 0;
+            z-index: 2;
+            border-right: 1px solid cadetblue;
+            border-bottom: 1px solid cadetblue; }
+            #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini {
+              width: 20%;
+              padding: 0.6em 0.5em;
+              border-left: 1px solid cadetblue;
+              border-bottom: 1px solid cadetblue; }
+              #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .fa-angle-right {
                 float: right; }
-        #nav-bar .menu-nav-bar .tilte-menu .mega-menu .mega-menu-mini:hover .link-mega-menu-mn {
-          color: white;
-          background-color: #063d08; }
-    #nav-bar .menu-nav-bar .tilte-menu:hover .link-tm {
-      color: #49b14d; }
-    #nav-bar .menu-nav-bar .product:hover .mega-menu {
-      display: block; }
+              #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu {
+                display: none;
+                position: absolute;
+                padding: 0;
+                width: 80%;
+                right: 0;
+                top: 0; }
+                #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .title-sb-menu {
+                  color: #49b14d;
+                  padding: 0.5em 0 0 1em; }
+                #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu {
+                  display: flex;
+                  justify-content: space-between; }
+                  #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu {
+                    width: 66%;
+                    list-style: none;
+                    padding-left: 0;
+                    display: grid;
+                    clear: both;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 2.7em 2.7em 2.7em 2.7em 2.7em; }
+                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu li {
+                      padding: 0.6em 0 0 1.5em; }
+                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu li:hover {
+                      background-color: #d2d2d2; }
+                  #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .img-detail {
+                    width: 34%;
+                    margin-top: 80px;
+                    margin-right: 20px; }
+                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .img-detail .img {
+                      float: right;
+                      max-width: 17em;
+                      max-height: 10em;
+                      width: auto;
+                      height: auto; }
+            #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini:hover {
+              background-color: #29324e; }
+            #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini:hover .link-menu-mn {
+              color: white; }
+            #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini:hover .detail-sb-menu {
+              display: block; }
+        #header #nav-bar .menu-nav-bar .list-menu .product:hover .submenu {
+          display: block; }
 
 #slide-event {
   margin-top: 1.5em;
