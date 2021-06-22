@@ -1,0 +1,36 @@
+.sign-in {
+  margin: 0 auto; }
+  .sign-in .main-signin {
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 40%;
+    background-color: #F8F8FF;
+    border-radius: 7px; }
+    .sign-in .main-signin h3 {
+      padding: 2em 0;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif; }
+    .sign-in .main-signin .fill-in-acc {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 2em; }
+      .sign-in .main-signin .fill-in-acc div input {
+        width: 80%;
+        height: 2.7em;
+        border-radius: 5px;
+        border: none;
+        padding-left: 1em; }
+      .sign-in .main-signin .fill-in-acc .acc {
+        display: block;
+        margin: 0 auto; }
+        .sign-in .main-signin .fill-in-acc .acc .fa-user {
+          padding: 0 1.2em; }
+      .sign-in .main-signin .fill-in-acc .password {
+        padding: 2.5em 0; }
+        .sign-in .main-signin .fill-in-acc .password .fa-lock {
+          padding: 0 1.1em; }
+      .sign-in .main-signin .fill-in-acc button {
+        background-color: #29324e;
+        color: white;
+        margin: 0 40% 0 40%; }

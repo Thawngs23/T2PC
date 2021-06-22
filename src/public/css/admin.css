@@ -1,0 +1,11 @@
+.admin-top {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  background-color: #212529; }
+  .admin-top div a {
+    color: white;
+    text-decoration: none;
+    font: 2em sans-serif; }
+  .admin-top .admin-right {
+    display: flex; }

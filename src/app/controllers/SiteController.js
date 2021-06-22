@@ -9,6 +9,7 @@ class SiteController {
             })
             .catch(next);
     }
+    login(req,res){res.render('login');}
 }
 
 module.exports = new SiteController();
