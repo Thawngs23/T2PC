@@ -1,25 +1,25 @@
 @import 'var';
 
-.sign-in{
+.sign-in {
     margin: 0 auto;
-    .main-signin{
+    .main-signin {
         margin: 0 auto;
         margin-top: 3em;
         margin-bottom: 3em;
-        width: 40%; 
-        background-color: #F8F8FF;
+        width: 40%;
+        background-color: #f8f8ff;
         border-radius: 7px;
-        h3{
+        h3 {
             padding: 2em 0;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .fill-in-acc{
+        .fill-in-acc {
             display: block;
             margin: 0 auto;
             padding-bottom: 2em;
-            div{
-                input{
+            div {
+                input {
                     width: 80%;
                     height: 2.7em;
                     border-radius: 5px;
@@ -27,20 +27,20 @@
                     padding-left: 1em;
                 }
             }
-            .acc{
+            .acc {
                 display: block;
                 margin: 0 auto;
-                .fa-user{
+                .fa-user {
                     padding: 0 1.2em;
                 }
             }
-            .password{
+            .password {
                 padding: 2.5em 0;
-                .fa-lock{
+                .fa-lock {
                     padding: 0 1.1em;
                 }
             }
-            button{
+            button {
                 background-color: $text-color;
                 color: white;
                 margin: 0 40% 0 40%;

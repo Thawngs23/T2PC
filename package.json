@@ -1,7 +1,7 @@
 {
-    "name": "petshop",
+    "name": "T2PC",
     "version": "1.0.0",
-    "description": "Web thương mại + dịch vụ về thú cưng",
+    "description": "WEBSITE BÁN MÁY TÍNH VÀ TƯ VẤN XÂY DỰNG CẤU HÌNH MÁY TÍNH HỢP LÝ THEO YÊU CẦU KHÁCH HÀNG",
     "main": "src/index.js",
     "scripts": {
         "format": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss} ",
