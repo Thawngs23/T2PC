@@ -24,7 +24,7 @@
     "bugs": {
         "url": "https://github.com/QTienTLS/petshop/issues"
     },
-    "homepage":  "https://QTienTLS.github.io/T2PC",
+    "homepage": "https://QTienTLS.github.io/T2PC",
     "dependencies": {
         "bcrypt": "^5.0.1",
         "body-parser": "^1.19.0",
