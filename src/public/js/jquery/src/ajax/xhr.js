@@ -68,7 +68,14 @@ define(['../core', '../var/support', '../ajax'], function (jQuery, support) {
                     callback = function (type) {
                         return function () {
                             if (callback) {
-                                callback = errorCallback = xhr.onload = xhr.onerror = xhr.onabort = xhr.ontimeout = xhr.onreadystatechange = null;
+                                callback =
+                                    errorCallback =
+                                    xhr.onload =
+                                    xhr.onerror =
+                                    xhr.onabort =
+                                    xhr.ontimeout =
+                                    xhr.onreadystatechange =
+                                        null;
 
                                 if (type === 'abort') {
                                     xhr.abort();
@@ -108,9 +115,10 @@ define(['../core', '../var/support', '../ajax'], function (jQuery, support) {
 
                     // Listen to events
                     xhr.onload = callback();
-                    errorCallback = xhr.onerror = xhr.ontimeout = callback(
-                        'error',
-                    );
+                    errorCallback =
+                        xhr.onerror =
+                        xhr.ontimeout =
+                            callback('error');
 
                     // Support: IE 9 only
                     // Use onreadystatechange to replace onabort

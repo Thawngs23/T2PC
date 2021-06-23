@@ -2252,9 +2252,8 @@
                 i = temp.length;
                 while (i--) {
                     if ((elem = temp[i])) {
-                        matcherOut[postMap[i]] = !(matcherIn[
-                            postMap[i]
-                        ] = elem);
+                        matcherOut[postMap[i]] = !(matcherIn[postMap[i]] =
+                            elem);
                     }
                 }
             }

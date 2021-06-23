@@ -9,7 +9,6 @@ class SiteController {
             })
             .catch(next);
     }
-
 }
 
 module.exports = new SiteController();

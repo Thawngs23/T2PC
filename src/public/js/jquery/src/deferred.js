@@ -274,7 +274,8 @@ define(['./core', './var/isFunction', './var/slice', './callbacks'], function (
                                     // Call an optional hook to record the stack, in case of exception
                                     // since it's otherwise lost when execution goes async
                                     if (jQuery.Deferred.getStackHook) {
-                                        process.stackTrace = jQuery.Deferred.getStackHook();
+                                        process.stackTrace =
+                                            jQuery.Deferred.getStackHook();
                                     }
                                     window.setTimeout(process);
                                 }

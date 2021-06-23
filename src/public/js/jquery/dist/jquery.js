@@ -722,7 +722,8 @@
                 },
                 // CSS string/identifier serialization
                 // https://drafts.csswg.org/cssom/#common-serializing-idioms
-                rcssescape = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
+                rcssescape =
+                    /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
                 fcssescape = function (ch, asCodePoint) {
                     if (asCodePoint) {
                         // U+0000 NULL becomes U+FFFD REPLACEMENT CHARACTER
@@ -2235,9 +2236,8 @@
                                               // Defend against cloned attroperties (jQuery gh-1709)
                                               uniqueCache =
                                                   outerCache[node.uniqueID] ||
-                                                  (outerCache[
-                                                      node.uniqueID
-                                                  ] = {});
+                                                  (outerCache[node.uniqueID] =
+                                                      {});
 
                                               cache = uniqueCache[type] || [];
                                               nodeIndex =
@@ -2270,9 +2270,8 @@
                                                       if (useCache) {
                                                           outerCache =
                                                               node[expando] ||
-                                                              (node[
-                                                                  expando
-                                                              ] = {});
+                                                              (node[expando] =
+                                                                  {});
 
                                                           // Support: IE <9 only
                                                           // Defend against cloned attroperties (jQuery gh-1709)
@@ -3455,7 +3454,8 @@
             elem.nodeName && elem.nodeName.toLowerCase() === name.toLowerCase()
         );
     }
-    var rsingleTag = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+    var rsingleTag =
+        /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
 
     // Implement the identical functionality for filter and not
     function winnow(elements, qualifier, not) {
@@ -4346,7 +4346,8 @@
                                     // Call an optional hook to record the stack, in case of exception
                                     // since it's otherwise lost when execution goes async
                                     if (jQuery.Deferred.getStackHook) {
-                                        process.stackTrace = jQuery.Deferred.getStackHook();
+                                        process.stackTrace =
+                                            jQuery.Deferred.getStackHook();
                                     }
                                     window.setTimeout(process);
                                 }
@@ -5430,8 +5431,11 @@
         _default: [0, '', ''],
     };
 
-    wrapMap.tbody = wrapMap.tfoot = wrapMap.colgroup = wrapMap.caption =
-        wrapMap.thead;
+    wrapMap.tbody =
+        wrapMap.tfoot =
+        wrapMap.colgroup =
+        wrapMap.caption =
+            wrapMap.thead;
     wrapMap.th = wrapMap.td;
 
     // Support: IE <=9 only
@@ -9820,7 +9824,8 @@
         rantiCache = /([?&])_=[^&]*/,
         rheaders = /^(.*?):[ \t]*([^\r\n]*)$/gm,
         // #7653, #8125, #8152: local protocol detection
-        rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
+        rlocalProtocol =
+            /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
         rnoContent = /^(?:GET|HEAD)$/,
         rprotocol = /^\/\//,
         /* Prefilters
@@ -10886,7 +10891,14 @@
                     callback = function (type) {
                         return function () {
                             if (callback) {
-                                callback = errorCallback = xhr.onload = xhr.onerror = xhr.onabort = xhr.ontimeout = xhr.onreadystatechange = null;
+                                callback =
+                                    errorCallback =
+                                    xhr.onload =
+                                    xhr.onerror =
+                                    xhr.onabort =
+                                    xhr.ontimeout =
+                                    xhr.onreadystatechange =
+                                        null;
 
                                 if (type === 'abort') {
                                     xhr.abort();
@@ -10926,9 +10938,10 @@
 
                     // Listen to events
                     xhr.onload = callback();
-                    errorCallback = xhr.onerror = xhr.ontimeout = callback(
-                        'error',
-                    );
+                    errorCallback =
+                        xhr.onerror =
+                        xhr.ontimeout =
+                            callback('error');
 
                     // Support: IE 9 only
                     // Use onreadystatechange to replace onabort

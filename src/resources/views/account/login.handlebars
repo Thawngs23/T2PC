@@ -1,16 +1,37 @@
-<div class="sign-in" onload="hideLogin()">
-    <div class="main-signin">
-        <h3>SIGN IN</h3>
-        <div class="fill-in-acc">
-            <div class="acc">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Name" />
+<div class="container">
+    <script>
+        document.getElementById("login-header").style.display = "none";
+    </script>
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card shadow-lg  rounded-lg mt-5 login-panel">
+                <div class="card-header">
+                    <h3 class="text-center font-weight-light my-4">Đăng nhập</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputName" type="text" placeholder="username" />
+                            <label for="inputEmail">Tên đăng nhập (Username)</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                            <label for="inputPassword">Mật khẩu</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
+                            <label class="form-check-label" for="inputRememberPassword">Ghi nhớ mật khẩu</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                            <a class="small" href="password.html">Quên mật khẩu ?</a>
+                            <a class="btn btn-primary" href="index.html">Đăng nhập</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center py-3">
+                    <div class="small"><a href="/account/register">Chưa có tài khoản ? Vui lòng đăng kí</a></div>
+                </div>
             </div>
-            <div class="password">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
-            </div>
-            <button>SIGN IN</button>
         </div>
     </div>
 </div>

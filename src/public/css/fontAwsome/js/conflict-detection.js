@@ -107,9 +107,8 @@
     var loaded = false;
 
     if (IS_DOM) {
-        loaded = (DOCUMENT.documentElement.doScroll
-            ? /^loaded|^c/
-            : /^loaded|^i|^c/
+        loaded = (
+            DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/
         ).test(DOCUMENT.readyState);
         if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
     }
@@ -770,9 +769,8 @@
                     fn: function fn() {
                         var iEl = document.getElementById(testIconId);
                         var computedStyle = window.getComputedStyle(iEl);
-                        var fontFamily = computedStyle.getPropertyValue(
-                            'font-family',
-                        );
+                        var fontFamily =
+                            computedStyle.getPropertyValue('font-family');
 
                         if (
                             !!fontFamily.match(/FontAwesome/) ||
@@ -917,9 +915,8 @@
                     },
                 })
                     .then(function () {
-                        var scriptNode = document.getElementById(
-                            nodeUnderTestId,
-                        );
+                        var scriptNode =
+                            document.getElementById(nodeUnderTestId);
                         parent.postMessage(
                             {
                                 type: 'fontawesome-conflict',
@@ -933,9 +930,8 @@
                         );
                     })
                     .catch(function (e) {
-                        var scriptNode = document.getElementById(
-                            nodeUnderTestId,
-                        );
+                        var scriptNode =
+                            document.getElementById(nodeUnderTestId);
 
                         if (e === 'timeout') {
                             parent.postMessage(
