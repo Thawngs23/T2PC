@@ -1,0 +1,15 @@
+---
+application:
+  name: "t2pc"
+  project: "t2pc"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "T2PC"
+  version: "4.4"
+routers:
+- name: "main-t2pc"
+  routes:
+  - application_name: "t2pc"
+    paths:
+    - "/*"
