@@ -5,8 +5,11 @@
     "main": "src/index.js",
     "scripts": {
         "format": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss} ",
-        "test": "nodemon --inspect src/index.js",
-        "convert": "node-sass --watch src/resources/scss --output src/public/css"
+        "start": "nodemon --inspect src/index.js",
+        "convert": "node-sass --watch src/resources/scss --output src/public/css",
+        "predeploy": "npm run build",
+        "build": "my_script_to_build",
+        "deploy": "gh-pages -d build"
     },
     "repository": {
         "type": "git",
@@ -21,12 +24,13 @@
     "bugs": {
         "url": "https://github.com/QTienTLS/petshop/issues"
     },
-    "homepage": "https://github.com/QTienTLS/petshop#readme",
+    "homepage":  "https://QTienTLS.github.io/T2PC",
     "dependencies": {
         "bcrypt": "^5.0.1",
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
         "express-handlebars": "^5.3.0",
+        "gh-pages": "^3.2.3",
         "mongoose": "^5.12.14",
         "nodemon": "^2.0.7"
     },
