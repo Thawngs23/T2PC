@@ -8,7 +8,7 @@
         "start": "nodemon --inspect src/index.js",
         "convert": "node-sass --watch src/resources/scss --output src/public/css",
         "predeploy": "npm run build",
-        "build": "src/index.js",
+        "build": "webpack",
         "deploy": "gh-pages -d build"
     },
     "repository": {
