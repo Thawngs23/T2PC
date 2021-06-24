@@ -26,22 +26,7 @@
                     color: yellow;
                 }
             }
-            .login {
-                a {
-                    text-decoration: none;
-                    color: white;
-                    font-family: Roboto;
-                    font-size: 1em;
-                    .fa-sign-in-alt {
-                        font-size: 1em;
-                    }
-                }
-                .sign-in {
-                    margin-right: 1em;
-                }
-                a:hover {
-                    color: yellow;
-                }
+            
             }
         }
         .header-container {
@@ -74,46 +59,36 @@
                 }
             }
             .header-container-right {
-                display: flex;
-                .hotline {
-                    display: flex;
-                    img {
-                        display: block;
-                        max-width: 2.8em;
-                        max-height: 2.8em;
-                        width: auto;
-                        height: auto;
-                        margin: 0.5em 0.7em 0 0;
-                    }
-                    .phone-number {
-                        line-height: 1;
-                        margin-top: 5px;
-                        .p1 {
-                            color: white;
-                            font-size: 1em;
-                            margin-bottom: 0;
-                        }
-                        .p2 {
-                            color: yellow;
-                            font-size: 2em;
-                            margin-bottom: 0;
-                        }
-                    }
+                background-color: yellowgreen;
+                position: relative;
+                left: -5em;
+                width: 25em;
+                margin-left: 15em;
+                .cart{
+                    color: white;
+                    border-color: white;
+                    border-width: 0.5em;
                 }
-                .cart {
-                    margin-left: 1em;
+                .login {
+                    margin-right: 2em;
+                    margin-top: 1em;
                     a {
-                        border-radius: 5px;
-                        border: 1px solid white;
+                        text-decoration: none;
                         color: white;
-                        padding: 0.7em 1em;
-                        i {
-                            font-size: inherit;
-                            display: inline-block;
-                            margin-top: 1.4em;
+                        font-family: Roboto;
+                        font-size: 1em;
+                        .fa-sign-in-alt {
+                            font-size: 1em;
                         }
                     }
-                }
+                    .sign-in {
+                        margin-right: 1em;
+                    }
+                    a:hover {
+                        color: yellow;
+                    }
+            
+                
             }
         }
     }

@@ -20,70 +20,50 @@
           margin-left: 1em; }
         #header #header-main .header-top .social a:hover {
           color: yellow; }
-      #header #header-main .header-top .login a {
-        text-decoration: none;
+  #header .header-container {
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0.3em; }
+    #header .header-container .logo a img {
+      display: block;
+      max-width: 12.5em;
+      max-height: 3.75em;
+      width: auto;
+      height: auto; }
+    #header .header-container .search {
+      margin-top: 6px; }
+      #header .header-container .search form input {
+        padding: 0.7em 0.7em;
+        width: 22em;
+        border: none;
+        outline: none;
+        border-radius: 5px; }
+    #header .header-container .header-container-right {
+      background-color: yellowgreen;
+      position: relative;
+      left: -5em;
+      width: 25em;
+      margin-left: 15em; }
+      #header .header-container .header-container-right .cart {
         color: white;
-        font-family: Roboto;
-        font-size: 1em; }
-        #header #header-main .header-top .login a .fa-sign-in-alt {
+        border-color: white;
+        border-width: 0.5em; }
+      #header .header-container .header-container-right .login {
+        margin-right: 2em;
+        margin-top: 1em; }
+        #header .header-container .header-container-right .login a {
+          text-decoration: none;
+          color: white;
+          font-family: Roboto;
           font-size: 1em; }
-      #header #header-main .header-top .login .sign-in {
-        margin-right: 1em; }
-      #header #header-main .header-top .login a:hover {
-        color: yellow; }
-    #header #header-main .header-container {
-      max-width: 85%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5em 0.3em; }
-      #header #header-main .header-container .logo a img {
-        display: block;
-        max-width: 12.5em;
-        max-height: 3.75em;
-        width: auto;
-        height: auto; }
-      #header #header-main .header-container .search {
-        margin-top: 6px; }
-        #header #header-main .header-container .search form input {
-          padding: 0.7em 0.7em;
-          width: 22em;
-          border: none;
-          outline: none;
-          border-radius: 5px; }
-      #header #header-main .header-container .header-container-right {
-        display: flex; }
-        #header #header-main .header-container .header-container-right .hotline {
-          display: flex; }
-          #header #header-main .header-container .header-container-right .hotline img {
-            display: block;
-            max-width: 2.8em;
-            max-height: 2.8em;
-            width: auto;
-            height: auto;
-            margin: 0.5em 0.7em 0 0; }
-          #header #header-main .header-container .header-container-right .hotline .phone-number {
-            line-height: 1;
-            margin-top: 5px; }
-            #header #header-main .header-container .header-container-right .hotline .phone-number .p1 {
-              color: white;
-              font-size: 1em;
-              margin-bottom: 0; }
-            #header #header-main .header-container .header-container-right .hotline .phone-number .p2 {
-              color: yellow;
-              font-size: 2em;
-              margin-bottom: 0; }
-        #header #header-main .header-container .header-container-right .cart {
-          margin-left: 1em; }
-          #header #header-main .header-container .header-container-right .cart a {
-            border-radius: 5px;
-            border: 1px solid white;
-            color: white;
-            padding: 0.7em 1em; }
-            #header #header-main .header-container .header-container-right .cart a i {
-              font-size: inherit;
-              display: inline-block;
-              margin-top: 1.4em; }
+          #header .header-container .header-container-right .login a .fa-sign-in-alt {
+            font-size: 1em; }
+        #header .header-container .header-container-right .login .sign-in {
+          margin-right: 1em; }
+        #header .header-container .header-container-right .login a:hover {
+          color: yellow; }
   #header #nav-bar {
     width: 100%;
     background-color: #eef0f7; }

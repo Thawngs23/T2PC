@@ -1,5 +1,6 @@
 <div id="header">
     <div id="header-main">
+        {{!-- phần header trên --}}
         <div class="header-top">
             <div class="social">
                 <div class="follow">Theo dõi:</div>
@@ -7,7 +8,29 @@
                 <a class="social-network" href="#"><i class="fab fa-google-plus-g"></i></a>
                 <a class="social-network" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="login" id="login-header">
+            {{!-- hotline --}}
+            <div class="hotline-info">
+                
+            </div>
+        </div>
+        {{!-- phần header dưới --}}
+        <div class="header-container">
+            {{!-- logo --}}
+            <div class="logo">
+                <a href="/"><img src="/img/logo.png" alt="logo"></a>
+            </div>
+            {{!-- thanh tìm kiếm --}}
+            <div class="search">
+                <form action="">
+                    <input type="search" placeholder="Nhập thông tin cần tìm...">
+                </form>
+            </div>
+            {{!-- khu vực đăng nhập + giỏ hàng --}}
+            <div class="header-container-right row"> 
+                <div class="cart col">
+                    <p>Giỏ hàng</p>
+                </div>
+               <div class="login col-7" id="login-header">
                 <a href="/account/login" class="sign-in">
                     <i class="fas fa-sign-in-alt"></i>
                     <span>Đăng nhập</span>
@@ -17,37 +40,10 @@
                     <span>Đăng ký</span>
                 </a>
             </div>
-        </div>
-        <div class="header-container">
-            <div class="logo">
-                <a href="/"><img src="/img/logo.png" alt="logo"></a>
-            </div>
-            <div class="search">
-                <form action="">
-                    <input type="search" placeholder="Nhập thông tin cần tìm...">
-                </form>
-            </div>
-            <div class="header-container-right">
-                <div class="hotline">
-                    <img src="/img/hotline_image.png" alt="hotline">
-                    <div class="phone-number">
-                        <p class="p1">Hotline</p>
-                        <p class="p2">0987 654 321</p>
-                    </div>
-                </div>
-                <div class="cart">
-                    <a class="cart-drop" href="#"><i class="fas fa-cart-arrow-down"></i></a>
-                    {{!-- <div class="cart-dropdown-content">
-                        <p>Tổng cộng:</p>
-                        <div class="btn-cart">
-                            <button>Thanh toán</button>
-                            <button>Giỏ Hàng</button>
-                        </div>
-                    </div> --}}
-                </div>
             </div>
         </div>
     </div>
+    {{!-- menu chính --}}
     <div id="nav-bar">
         <div class="menu-nav-bar">
             <ul class="list-menu">
