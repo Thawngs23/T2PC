@@ -20,20 +20,6 @@
           margin-left: 1em; }
         #header #header-main .header-top .social a:hover {
           color: yellow; }
-      #header #header-main .header-top .hotline-info {
-        display: flex; }
-        #header #header-main .header-top .hotline-info img {
-          max-width: 25px;
-          max-height: 25px;
-          width: auto;
-          height: auto;
-          margin-right: 5px; }
-        #header #header-main .header-top .hotline-info div span {
-          color: white;
-          font-family: Roboto; }
-        #header #header-main .header-top .hotline-info div a {
-          text-decoration: none;
-          color: yellow; }
   #header .header-container {
     max-width: 85%;
     margin: 0 auto;
@@ -47,35 +33,14 @@
       width: auto;
       height: auto; }
     #header .header-container .search {
-      margin-top: 7px; }
+      margin-top: 6px;
+      margin-left: 3em; }
       #header .header-container .search form input {
         padding: 0.7em 0.7em;
-        width: 22em;
+        width: 25vw;
         border: none;
         outline: none;
         border-radius: 5px; }
-    #header .header-container .header-container-right {
-      width: 27%;
-      display: flex;
-      justify-content: space-between;
-      background-color: yellowgreen; }
-      #header .header-container .header-container-right .cart {
-        color: white;
-        border-color: white;
-        border-width: 0.5em; }
-      #header .header-container .header-container-right .login {
-        display: flex; }
-        #header .header-container .header-container-right .login a {
-          text-decoration: none;
-          color: white;
-          font-family: Roboto;
-          font-size: 1em; }
-          #header .header-container .header-container-right .login a .fa-sign-in-alt {
-            font-size: 1em; }
-        #header .header-container .header-container-right .login .sign-in {
-          margin-right: 1em; }
-        #header .header-container .header-container-right .login a:hover {
-          color: yellow; }
   #header #nav-bar {
     width: 100%;
     background-color: #eef0f7; }

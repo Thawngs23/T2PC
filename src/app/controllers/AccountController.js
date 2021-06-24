@@ -9,12 +9,14 @@ class AccountController {
     register(req, res) {
         res.render('account/register');
     }
-    save(req,res,next)
-    {
-
+    save(req, res, next) {
         const formData = req.body;
-        const salt =  bcryt.genSaltSync(10);
-        formData.password = bcryt.hashSync(formData.password,salt,function(err, hash) {});
+        const salt = bcryt.genSaltSync(10);
+        formData.password = bcryt.hashSync(
+            formData.password,
+            salt,
+            function (err, hash) {},
+        );
         const account = new Account(formData);
         account.save();
         res.redirect('/account/login');

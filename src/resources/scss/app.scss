@@ -1,4 +1,4 @@
-@import 'var';
+@import "var";
 
 #header {
     width: 100%;
@@ -26,97 +26,41 @@
                     color: yellow;
                 }
             }
-            .hotline-info{
-                display: flex;
-                img{
-                    max-width: 25px;
-                    max-height: 25px;
+        }
+    }
+    .header-container {
+        max-width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 0.3em;
+        .logo {
+            a {
+                img {
+                    display: block;
+                    max-width: 12.5em;
+                    max-height: 3.75em;
                     width: auto;
                     height: auto;
-                    margin-right: 5px;
-                }
-                div{
-                    span{
-                        color: white;
-                        font-family: Roboto;
-                    }
-                    a{
-                        text-decoration: none;
-                        color: yellow;
-                    }
                 }
             }
+        }
+        .search {
+            margin-top: 6px;
+            margin-left: 3em;
+            // width: 20vw;
+            form {
+                input {
+                    padding: 0.7em 0.7em;
+                    width: 25vw;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+
         
-        
-        }
-            
-        }
-        .header-container {
-            max-width: 85%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            padding: 0.5em 0.3em;
-            .logo {
-                a {
-                    img {
-                        display: block;
-                        max-width: 12.5em;
-                        max-height: 3.75em;
-                        width: auto;
-                        height: auto;
-                    }
-                }
-            }
-            .search {
-                margin-top: 7px;
-                form {
-                    input {
-                        padding: 0.7em 0.7em;
-                        width: 22em;
-                        border: none;
-                        outline: none;
-                        border-radius: 5px;
-                    }
-                }
-            }
-            .header-container-right {
-                width: 27%;
-                display: flex;
-                justify-content: space-between;
-                background-color: yellowgreen;
-                // position: relative;
-                // left: -5em;
-                // width: 25em;
-                // margin-left: 15em;
-                .cart{
-                    color: white;
-                    border-color: white;
-                    border-width: 0.5em;
-                }
-                .login {
-                    display: flex;
-                    // margin-right: 2em;
-                    // margin-top: 1em;
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        font-family: Roboto;
-                        font-size: 1em;
-                        .fa-sign-in-alt {
-                            font-size: 1em;
-                        }
-                    }
-                    .sign-in {
-                        margin-right: 1em;
-                    }
-                    a:hover {
-                        color: yellow;
-                    }
-            
-                
-            }
-        }
     }
     #nav-bar {
         width: 100%;
@@ -239,3 +183,7 @@
 }
 #login-header {
 }
+.login-cart {
+    
+}
+
