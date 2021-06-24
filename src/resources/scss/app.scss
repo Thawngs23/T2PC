@@ -26,8 +26,30 @@
                     color: yellow;
                 }
             }
-            
+            .hotline-info{
+                display: flex;
+                img{
+                    max-width: 25px;
+                    max-height: 25px;
+                    width: auto;
+                    height: auto;
+                    margin-right: 5px;
+                }
+                div{
+                    span{
+                        color: white;
+                        font-family: Roboto;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: yellow;
+                    }
+                }
             }
+        
+        
+        }
+            
         }
         .header-container {
             max-width: 85%;
@@ -47,7 +69,7 @@
                 }
             }
             .search {
-                margin-top: 6px;
+                margin-top: 7px;
                 form {
                     input {
                         padding: 0.7em 0.7em;
@@ -59,19 +81,23 @@
                 }
             }
             .header-container-right {
+                width: 27%;
+                display: flex;
+                justify-content: space-between;
                 background-color: yellowgreen;
-                position: relative;
-                left: -5em;
-                width: 25em;
-                margin-left: 15em;
+                // position: relative;
+                // left: -5em;
+                // width: 25em;
+                // margin-left: 15em;
                 .cart{
                     color: white;
                     border-color: white;
                     border-width: 0.5em;
                 }
                 .login {
-                    margin-right: 2em;
-                    margin-top: 1em;
+                    display: flex;
+                    // margin-right: 2em;
+                    // margin-top: 1em;
                     a {
                         text-decoration: none;
                         color: white;
