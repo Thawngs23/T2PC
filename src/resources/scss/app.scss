@@ -196,8 +196,10 @@
 #slide-event {
     margin-top: 1.5em;
     margin-bottom: 2em;
-    width: 900px;
-    height: 500px;
+    max-width: 1200px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
     // position: relative;
     left: 50%;
     transform: translate(-50%, 0);
