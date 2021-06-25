@@ -203,18 +203,20 @@
     transform: translate(-50%, 0);
     // z-index: 1;
 }
-#login-header {
-}
+
 .login-cart {
+    display: flex;
+    align-items: center;
     //background-color: yellowgreen;
-    width: 50em;
+    
     .cart {
-       // background-color: chocolate;
-       margin-left: 10em;
+        //background-color: yellowgreen;
+        
         .cart-in {
             background-color: $main-color;
             border-style: solid;
             border-width: 3px;
+            border-radius: 5px;
             border-color: white;
             color: white;
             padding: 15px 32px;
@@ -225,29 +227,22 @@
             //margin-left: 20em;
             cursor: pointer;
             width: 10em;
+           margin-right: 4em;
             
         }
     }
     .login {
-        margin-top: 1em;
+        display: flex;
         //background-color: chartreuse;
-        margin-left: -2em;
-        a {
-            position: relative;
-            left: 2em;
+      
+        .color-r {
             text-decoration: none;
             color: white;
             font-family: Roboto;
-            font-size: 1em;
-            .fa-sign-in-alt {
-                font-size: 1em;
-            }
+            margin-left: 0.7em;
+            clear: both;
         }
-        .sign-in {
-            margin-right: 1em;
-
-        }
-        a:hover {
+        .color-r:hover{
             color: yellow;
         }
     }
