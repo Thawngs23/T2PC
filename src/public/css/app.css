@@ -20,6 +20,20 @@
           margin-left: 1em; }
         #header #header-main .header-top .social a:hover {
           color: yellow; }
+      #header #header-main .header-top .hotline-info {
+        display: flex; }
+        #header #header-main .header-top .hotline-info img {
+          max-width: 25px;
+          max-height: 25px;
+          width: auto;
+          height: auto;
+          margin-right: 5px; }
+        #header #header-main .header-top .hotline-info div span {
+          color: white;
+          font-family: Roboto; }
+        #header #header-main .header-top .hotline-info div a {
+          text-decoration: none;
+          color: yellow; }
   #header .header-container {
     max-width: 85%;
     margin: 0 auto;
@@ -41,6 +55,8 @@
         border: none;
         outline: none;
         border-radius: 5px; }
+    #header .header-container .login-cart {
+      max-width: 25%; }
   #header #nav-bar {
     width: 100%;
     background-color: #eef0f7; }
@@ -100,9 +116,9 @@
                     clear: both;
                     grid-template-columns: 50% 50%;
                     grid-template-rows: 2.7em 2.7em 2.7em 2.7em 2.7em; }
-                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu li {
+                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu a {
                       padding: 0.6em 0 0 1.5em; }
-                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu li:hover {
+                    #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .list-sb-menu a:hover {
                       background-color: #d2d2d2; }
                   #header #nav-bar .menu-nav-bar .list-menu .tilte-menu .submenu .menu-mini .detail-sb-menu .container-sb-menu .img-detail {
                     width: 34%;
@@ -128,7 +144,6 @@
   margin-bottom: 2em;
   width: 900px;
   height: 500px;
-  position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 1; }
+  animation: alternate; }

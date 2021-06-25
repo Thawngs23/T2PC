@@ -26,6 +26,26 @@
                     color: yellow;
                 }
             }
+            .hotline-info{
+                display: flex;
+                img{
+                    max-width: 25px;
+                    max-height: 25px;
+                    width: auto;
+                    height: auto;
+                    margin-right: 5px;
+                }
+                div{
+                    span{
+                        color: white;
+                        font-family: Roboto;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: yellow;
+                    }
+                }
+            }
         }
     }
     .header-container {
@@ -59,7 +79,9 @@
                 }
             }
         }
-
+        .login-cart{
+            max-width: 25%;
+        }
         
     }
     #nav-bar {
@@ -129,10 +151,10 @@
                                         clear: both;
                                         grid-template-columns: 50% 50%;
                                         grid-template-rows: 2.7em 2.7em 2.7em 2.7em 2.7em;
-                                        li {
+                                        a {
                                             padding: 0.6em 0 0 1.5em;
                                         }
-                                        li:hover {
+                                        a:hover {
                                             background-color: #d2d2d2;
                                         }
                                     }
@@ -176,10 +198,10 @@
     margin-bottom: 2em;
     width: 900px;
     height: 500px;
-    position: relative;
+    // position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 1;
+    // z-index: 1;
 }
 #login-header {
 }

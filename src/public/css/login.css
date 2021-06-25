@@ -1,6 +1,8 @@
-.register-panel, .login-panel {
+.register-panel,
+.login-panel {
   margin: 3em; }
-  .register-panel .btn, .login-panel .btn {
+  .register-panel .btn,
+  .login-panel .btn {
     background-color: #49b14d;
     color: white;
     border-color: #49b14d; }
