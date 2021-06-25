@@ -30,10 +30,11 @@
                 </form>
             </div>
             {{!-- khu vực đăng nhập + giỏ hàng --}}
-            <div class="container login-cart row">
-                <div class="cart col">
-                    <a class="cart-in"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
+            <div class="login-cart">
+                <div class="cart">
+                    <a href="#" class="cart-in"><i class="fad fa-shopping-cart"></i> Giỏ hàng</a>
                 </div>
+
                 {{!-- bảng thông tin user đã đăng nhập --}}
                 <div class="dropdown col" id="user-panel" style="display: none;">
                     
@@ -42,10 +43,18 @@
                 <div class="login container col" id="login-header">
 
                     <a href="/account/login" class="sign-in">
+
+
+                <div class="login" id="login-header">
+                    <div class="user-panel">
+                        
+                    </div>
+                    <a href="/account/login" class="sign-in color-r">
+
                         <i class="fas fa-sign-in-alt"></i>
                         <span>Đăng nhập</span>
                     </a>
-                    <a href="/account/register" class="register-button">
+                    <a href="/account/register" class="register-button color-r">
                         <i class="fas fa-user-plus"></i>
                         <span>Đăng ký</span>
                     </a>
