@@ -55,8 +55,6 @@
         border: none;
         outline: none;
         border-radius: 5px; }
-    #header .header-container .login-cart {
-      max-width: 25%; }
   #header #nav-bar {
     width: 100%;
     background-color: #eef0f7; }
@@ -145,5 +143,49 @@
   width: 900px;
   height: 500px;
   left: 50%;
-  transform: translate(-50%, 0);
-  animation: alternate; }
+  transform: translate(-50%, 0); }
+
+.login-cart {
+  width: 50em; }
+  .login-cart .cart {
+    margin-left: 10em; }
+    .login-cart .cart .cart-in {
+      background-color: #49b14d;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      width: 10em; }
+  .login-cart .login {
+    margin-top: 1em; }
+    .login-cart .login a {
+      position: relative;
+      left: 2em;
+      text-decoration: none;
+      color: white;
+      font-family: Roboto;
+      font-size: 1em; }
+      .login-cart .login a .fa-sign-in-alt {
+        font-size: 1em; }
+    .login-cart .login .sign-in {
+      margin-right: 1em; }
+    .login-cart .login a:hover {
+      color: yellow; }
+
+@media screen and (max-width: 85em) {
+  .login-cart .login {
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column; }
+    .login-cart .login a {
+      padding: 0em 0.5em; }
+    .login-cart .login .sign-in {
+      margin-bottom: 0.2em; }
+  .login-cart .cart {
+    margin-left: 3em; } }

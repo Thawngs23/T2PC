@@ -1,7 +1,7 @@
 function hideLogin() {
     document.getElementById('login-header').style.display = 'none';
 }
-function formvalidate() {
+function registerValidate() {
     var p = document.forms['register']['password'].value;
     var rp = document.forms['register']['password-confirm'].value;
     var un = document.forms['register']['username'].value;
