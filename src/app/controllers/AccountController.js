@@ -57,6 +57,11 @@ class AccountController {
        })
 
     }
+    logout(req,res){
+        req.session.destroy(function(err){
+            return res.redirect('/');
+        })
+    }
 }
 
 module.exports = new AccountController();

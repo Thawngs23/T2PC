@@ -248,14 +248,41 @@
     }
 }
 #user-panel{
+    position: relative;
+  display: inline-block;
+    cursor: pointer;
     img{
         width: 3em;
         height: 3em;
         border-radius: 50%;
     }
-    a{
+    .dropbtn{
         color: white;
+        border: none;
+        background-color: $main-color;
     }
+    .dropdown-user{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        a{
+            color: black;
+
+        padding: 12px 16px;
+        text-decoration: none;
+         display: block;
+         text-align: center;
+        }
+        a:hover {background-color: #ddd;}
+    }
+    .show{
+        display: block;
+}
+
 }
 @media screen and (max-width: 85em) {
     .login-cart{

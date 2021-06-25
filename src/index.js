@@ -28,9 +28,23 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 route(app);
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+app.engine(
+    'hbs',
+    exphbs({
+        extname: '.hbs',
+        helpers: {
+            sum: (a, b) => a + b,
+            neq: (a, b) => a != b,
+            eq: (a, b) => a == b,
+            get_length: (a) => a.length,
+        },
+    }),
+);
+
+app.set('view engine', 'hbs');
+//app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('views', path.join(__dirname, 'resources\\views'));
 
 app.listen(port, () => {
