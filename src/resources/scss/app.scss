@@ -28,6 +28,7 @@
             }
             .hotline-info{
                 display: flex;
+                align-items: center;
                 img{
                     max-width: 25px;
                     max-height: 25px;
@@ -53,6 +54,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0.5em 0.3em;
         .logo {
             a {
@@ -66,22 +68,52 @@
             }
         }
         .search {
-            margin-top: 6px;
-            margin-left: 3em;
+            // margin-top: 6px;
+            // margin-left: 3em;
             // width: 20vw;
+            width: 35%;
             form {
                 input {
                     padding: 0.7em 0.7em;
-                    width: 25vw;
+                    width: 100%;
                     border: none;
                     outline: none;
                     border-radius: 5px;
                 }
             }
         }
-        // .login-cart{
-        //     max-width: 25%;
-        // }
+        .login-cart{
+            display: flex;
+            align-items: center;
+            .login{
+                display: flex;
+                // align-items: center;
+                .color-r{
+                    color: white;
+                    font-family: Roboto;
+                    margin-left: 0.7em;
+                    clear: both;
+                }
+                .color-r:hover {
+                    color: yellow;
+                }
+            }
+            .cart{
+                border: 1px solid white;
+                border-radius: 5px;
+                .cart-in{
+                    text-decoration: none;
+                    color: white;
+                    padding: 1em 0.5em;
+                    .fa-shopping-cart{
+                        padding: 1em 0.5em;
+                    }
+                }
+                .cart-in:hover {
+                    color: yellow;
+                }
+            }
+        }
         
     }
     #nav-bar {
@@ -205,74 +237,77 @@
 }
 #login-header {
 }
-.login-cart {
-    //background-color: yellowgreen;
-    width: 50em;
-    .cart {
-       // background-color: chocolate;
-       margin-left: 10em;
-        .cart-in {
-            background-color: $main-color;
-            border-style: solid;
-            border-width: 3px;
-            border-color: white;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            //margin-left: 20em;
-            cursor: pointer;
-            width: 10em;
+// .login-cart {
+//     display: flex;
+//     //background-color: yellowgreen;
+//     // width: 50em;
+//     .cart {
+//        // background-color: chocolate;
+//        margin-left: 10em;
+//         .cart-in {
+//             background-color: $main-color;
+//             border-style: solid;
+//             border-width: 3px;
+//             border-color: white;
+//             color: white;
+//             padding: 15px 32px;
+//             text-align: center;
+//             text-decoration: none;
+//             display: inline-block;
+//             font-size: 16px;
+//             //margin-left: 20em;
+//             cursor: pointer;
+//             width: 10em;
             
-        }
-    }
-    .login {
-        margin-top: 1em;
-        //background-color: chartreuse;
+//         }
+//     }
+//     .login {
+//         margin-top: 1em;
+//         margin-left: -2em;
+//         display: flex;
+//         //background-color: chartreuse;
         
-        a {
-            position: relative;
-            left: 2em;
-            text-decoration: none;
-            color: white;
-            font-family: Roboto;
-            font-size: 1em;
-            .fa-sign-in-alt {
-                font-size: 1em;
-            }
-        }
-        .sign-in {
-            margin-right: 1em;
+//         a {
+//             position: relative;
+//             left: 2em;
+//             text-decoration: none;
+//             color: white;
+//             font-family: Roboto;
+//             font-size: 1em;
+//             .fa-sign-in-alt {
+//                 font-size: 1em;
+//             }
+//         }
+//         .sign-in {
+//             margin-right: 1em;
 
-        }
-        a:hover {
-            color: yellow;
-        }
-    }
-}
-@media screen and (max-width: 85em) {
-    .login-cart{
-        .login{
-            margin-top: 0em;
-            display: flex;
-            flex-direction: column;
-            a{
-                padding: 0em 0.5em;
-            }
-            .sign-in{
-                margin-bottom: 0.2em;
-            }
-        }
-        .cart{
-            margin-left: 3em;
-            .cart-in{
-                // margin-left: 1em;
+//         }
+//         a:hover {
+//             color: yellow;
+//         }
+//     }
+// }
+// @media screen and (max-width: 85em) {
+//     .login-cart{
+//         .login{
+//             margin-top: 0em;
+//             display: flex;
+//             flex-direction: column;
+//             a{
+//                 padding: 0em 0.5em;
+//             }
+//             .sign-in{
+//                 margin-bottom: 0.2em;
+//             }
+//         }
+//         .cart{
+//             margin-left: 3em;
+//             .cart-in{
+//                 // margin-left: 1em;
                 
-            }
-        }
-    }
+//             }
+//         }
+//     }
     
-}
+// }
 
