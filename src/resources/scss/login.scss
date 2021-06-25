@@ -7,8 +7,16 @@
         color: white;
         border-color: $main-color;
     }
+    #helper-login{
+        color: red;
+        font-style: italic;
+        background-color: thistle;
+        width: auto;
+        //display: none;
+    }
 }
 .small {
+
     color: $main-color;
     a {
         color: $main-color;

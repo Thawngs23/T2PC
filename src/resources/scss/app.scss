@@ -231,7 +231,7 @@
     .login {
         margin-top: 1em;
         //background-color: chartreuse;
-        
+        margin-left: -2em;
         a {
             position: relative;
             left: 2em;
@@ -250,6 +250,16 @@
         a:hover {
             color: yellow;
         }
+    }
+}
+#user-panel{
+    img{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+    }
+    a{
+        color: white;
     }
 }
 @media screen and (max-width: 85em) {

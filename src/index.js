@@ -7,7 +7,22 @@ const { extname, join } = require('path');
 const route = require('./routes/index.route');
 const db = require('./config/db');
 const bodyParser = require('body-parser');
+const methodOverride = require('method-override');
+const session = require('express-session');
 
+app.use(methodOverride('_method'));
+app.use(
+    session({
+        resave: true,
+        saveUninitialized: true,
+        secret: 'somesecret',
+        cookie: { maxAge: 6000000 },
+    }),
+);
+app.use(function (req, res, next) {
+    res.locals.session = req.session;
+    next();
+});
 db.connect();
 //middleware
 app.use(bodyParser.urlencoded({ extended: false }));

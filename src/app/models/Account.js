@@ -9,7 +9,7 @@ const Account = new Schema({
     email: { type: String, maxLength: 255 },
     password: { type: String, maxLength: 255 },
     role: { type: String, default: 'user' },
-    img: { type: String },
+    img: { type: String, },
     createAt: { type: Date, default: Date.now },
 });
 

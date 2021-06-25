@@ -6,6 +6,12 @@
     background-color: #49b14d;
     color: white;
     border-color: #49b14d; }
+  .register-panel #helper-login,
+  .login-panel #helper-login {
+    color: red;
+    font-style: italic;
+    background-color: thistle;
+    width: auto; }
 
 .small {
   color: #49b14d; }

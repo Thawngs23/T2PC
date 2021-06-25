@@ -16,3 +16,13 @@ function registerValidate() {
         return false;
     }
 }
+function loginValidate(){
+    var u = document.forms['login-page']['inputName'].value;
+    var p = document.forms['login-page']['inputPassword'].value;
+    if(!u || !p)
+    {
+        alert('Vui lòng nhập đủ thông tin !');
+        return false;
+    }
+    
+}
