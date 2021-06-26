@@ -1,9 +1,9 @@
-#footer {
+#footer-id {
   width: 100%;
   margin: 0 auto;
   background-color: #333;
   margin-top: 3em; }
-  #footer .footer-main {
+  #footer-id .footer-main {
     width: 85%;
     max-width: 1728px;
     margin: 0 auto;
@@ -11,39 +11,39 @@
     color: white;
     justify-content: space-between;
     padding: 30px 20px 10px 20px; }
-    #footer .footer-main .gt {
+    #footer-id .footer-main .gt {
       width: 25%;
       line-height: 1.2; }
-      #footer .footer-main .gt a {
+      #footer-id .footer-main .gt a {
         text-decoration: none;
         color: white; }
-        #footer .footer-main .gt a .logo-ft {
+        #footer-id .footer-main .gt a .logo-ft {
           max-width: 200px;
           max-height: auto; }
-      #footer .footer-main .gt .address {
+      #footer-id .footer-main .gt .address {
         padding-top: 10px; }
-        #footer .footer-main .gt .address p {
+        #footer-id .footer-main .gt .address p {
           font-family: Roboto;
           font-size: 14px; }
-      #footer .footer-main .gt .footer-social a {
+      #footer-id .footer-main .gt .footer-social a {
         font-size: large;
         margin-right: 10px; }
-      #footer .footer-main .gt .footer-social a:hover {
+      #footer-id .footer-main .gt .footer-social a:hover {
         color: yellow; }
-    #footer .footer-main .ft-main {
+    #footer-id .footer-main .ft-main {
       width: 60%;
       display: flex;
       justify-content: space-between; }
-      #footer .footer-main .ft-main div .ft-content {
+      #footer-id .footer-main .ft-main div .ft-content {
         display: inline-grid;
         line-height: 1.8; }
-        #footer .footer-main .ft-main div .ft-content a {
+        #footer-id .footer-main .ft-main div .ft-content a {
           text-decoration: none;
           color: #888; }
-        #footer .footer-main .ft-main div .ft-content a:hover {
+        #footer-id .footer-main .ft-main div .ft-content a:hover {
           color: white; }
-      #footer .footer-main .ft-main div h6 {
+      #footer-id .footer-main .ft-main div h6 {
         font-size: 18px; }
-      #footer .footer-main .ft-main div a {
+      #footer-id .footer-main .ft-main div a {
         font-size: 15px;
         font-weight: normal; }
