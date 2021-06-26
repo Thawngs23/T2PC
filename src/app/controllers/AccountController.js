@@ -1,6 +1,8 @@
 const bcryt = require('bcrypt');
 const Account = require('../models/Account');
 const session = require('express-session');
+const path = require('path');
+
 var help;
 
 class AccountController {
@@ -13,6 +15,10 @@ class AccountController {
     }
     save(req, res, next) {
         const formData = req.body;
+        if(formData.sex=='male')
+            formData.img = '/img/user-default.png';
+        else   
+        formData.img = '/img/user-default-female.png';
         const salt = bcryt.genSaltSync(10);
         formData.password = bcryt.hashSync(
             formData.password,
@@ -36,7 +42,9 @@ class AccountController {
                        img: acc.img,
                        name: acc.username,
                        role: acc.role,
+                       
                    };
+                   
                    res.redirect('/'); 
                }
                else
@@ -62,6 +70,7 @@ class AccountController {
             return res.redirect('/');
         })
     }
+    
 }
 
 module.exports = new AccountController();

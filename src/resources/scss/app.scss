@@ -1,8 +1,8 @@
 @import "var";
 
-#header {
+#header-id {
     width: 100%;
-    background-color: #49b14d;
+    background-color: $main-color;
     #header-main {
         max-width: 120em;
         margin: 0 auto;
