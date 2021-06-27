@@ -71,30 +71,28 @@
                     mới</button>
                 {{!-- Form thêm mới hiện ra khi bấm vào nút 'thêm mới' --}}
                 <div class="form-add" id="form-add-event" style="display: none;">
-                    <form method="POST" action="/admin/add-event" name="add-event">
-                    <div class="row">
-                        <div class="mb-3 col">
-                            <label for="exampleInputEmail1" class="form-label">Tên sự kiện</label>
-                            <input type="text" class="form-control" id="inputEventName" name="inputEventName">
+                    <form method="POST" action="/admin/event/add-event" enctype="multipart/form-data" name="add-event">
+                        <div class="row">
+                            <div class="mb-3 col">
+                                <label for="exampleInputEmail1" class="form-label">Tên sự kiện</label>
+                                <input type="text" class="form-control" id="inputEventName" name="inputEventName">
 
-                        </div>
-                        <div class="mb-3 col">
-                            <label for="exampleInputEmail1" class="form-label">Hình ảnh banner</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="exampleInputEmail1" class="form-label">Hình ảnh banner</label>
+                                <input type="file" name="addImg" class="form-control" id="uploadImg">
 
-                        </div>
+                            </div>
                         </div>
                         <div class="row">
-                        <div class="mb-3 col-sm-8">
-                            <label for="exampleInputEmail1" class="form-label">Link tới sự kiện</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1">
+                            <div class="mb-3 col-sm-8">
+                                <label for="exampleInputEmail1" class="form-label">Link tới sự kiện</label>
+                                <input type="text" name="inputLink" class="form-control" id="exampleInputEmail1">
 
-                        </div>
-                        <div class="col-sm-4" style=" display: flex;
-		  align-items: center;
-		  justify-content: center;">
-                        <button type="submit" class="btn btn-primary btn-lg btn-add">Thêm</button>
-                        </div>
+                            </div>
+                            <div class="col-sm-4" style=" display: flex;align-items: center; justify-content: center;">
+                                <button type="submit" class="btn btn-primary btn-lg btn-add">Thêm</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -159,19 +157,17 @@
 </div>
 <script>
     function addEvent() {
-        if (document.getElementById('form-add-event').style.display == 'none')
-        {
-document.getElementById('form-add-event').style.display = 'block';
-document.getElementById('btn-add-event').innerHTML = 'Hoàn thành'
+        if (document.getElementById('form-add-event').style.display == 'none') {
+            document.getElementById('form-add-event').style.display = 'block';
+            document.getElementById('btn-add-event').innerHTML = 'Hoàn thành'
         }
-            
-        else
-        {
-document.getElementById('form-add-event').style.display = 'none';
-document.getElementById('btn-add-event').innerHTML = 'Thêm mới';
-        } 
-       
-            
+
+        else {
+            document.getElementById('form-add-event').style.display = 'none';
+            document.getElementById('btn-add-event').innerHTML = 'Thêm mới';
+        }
+
+
     }
 </script>
 <script src="/js/dashboard.js"></script>

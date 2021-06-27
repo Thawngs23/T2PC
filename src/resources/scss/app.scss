@@ -1,4 +1,4 @@
-@import "var";
+@import 'var';
 
 #header-id {
     width: 100%;
@@ -26,21 +26,21 @@
                     color: yellow;
                 }
             }
-            .hotline-info{
+            .hotline-info {
                 display: flex;
-                img{
+                img {
                     max-width: 25px;
                     max-height: 25px;
                     width: auto;
                     height: auto;
                     margin-right: 5px;
                 }
-                div{
-                    span{
+                div {
+                    span {
                         color: white;
                         font-family: Roboto;
                     }
-                    a{
+                    a {
                         text-decoration: none;
                         color: yellow;
                     }
@@ -82,7 +82,6 @@
         // .login-cart{
         //     max-width: 25%;
         // }
-        
     }
     #nav-bar {
         width: 100%;
@@ -210,10 +209,10 @@
     display: flex;
     align-items: center;
     //background-color: yellowgreen;
-    
+
     .cart {
         //background-color: yellowgreen;
-        
+
         .cart-in {
             background-color: $main-color;
             border-style: solid;
@@ -229,14 +228,13 @@
             //margin-left: 20em;
             cursor: pointer;
             width: 10em;
-           margin-right: 4em;
-            
+            margin-right: 4em;
         }
     }
     .login {
         display: flex;
         //background-color: chartreuse;
-      
+
         .color-r {
             text-decoration: none;
             color: white;
@@ -244,69 +242,67 @@
             margin-left: 0.7em;
             clear: both;
         }
-        .color-r:hover{
+        .color-r:hover {
             color: yellow;
         }
     }
 }
-#user-panel{
+#user-panel {
     position: relative;
-  display: inline-block;
+    display: inline-block;
     cursor: pointer;
-    img{
+    img {
         width: 3em;
         height: 3em;
         border-radius: 50%;
     }
-    .dropbtn{
+    .dropbtn {
         color: white;
         border: none;
         background-color: $main-color;
     }
-    .dropdown-user{
+    .dropdown-user {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
         min-width: 160px;
         overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        a{
+        a {
             color: black;
 
-        padding: 12px 16px;
-        text-decoration: none;
-         display: block;
-         text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
         }
-        a:hover {background-color: #ddd;}
+        a:hover {
+            background-color: #ddd;
+        }
     }
-    .show{
+    .show {
         display: block;
-}
-
+    }
 }
 @media screen and (max-width: 85em) {
-    .login-cart{
-        .login{
+    .login-cart {
+        .login {
             margin-top: 0em;
             display: flex;
             flex-direction: column;
-            a{
+            a {
                 padding: 0em 0.5em;
             }
-            .sign-in{
+            .sign-in {
                 margin-bottom: 0.2em;
             }
         }
-        .cart{
+        .cart {
             margin-left: 3em;
-            .cart-in{
+            .cart-in {
                 // margin-left: 1em;
-                
             }
         }
     }
-    
 }
-

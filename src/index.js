@@ -9,7 +9,7 @@ const db = require('./config/db');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
-var cookieParser = require('cookie-parser')
+var cookieParser = require('cookie-parser');
 
 app.use(cookieParser());
 app.use(methodOverride('_method'));

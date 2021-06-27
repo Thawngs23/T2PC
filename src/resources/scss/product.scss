@@ -1,43 +1,42 @@
-@import "var";
+@import 'var';
 
 // Trang danh mục sản phẩm
-.product-main{
+.product-main {
     display: flex;
     justify-content: space-between;
     margin-top: 1em;
     padding: 0;
 
     // Bộ lọc sản phẩm
-    .filter{
+    .filter {
         width: 19%;
 
         // Lọc theo hãng sản xuất
-        .filter-manufacturer{
+        .filter-manufacturer {
             background-color: #f0f3fc;
             margin-top: 10px;
 
             // Title
-            .manufacturer{
+            .manufacturer {
                 padding: 10px 10px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 cursor: pointer;
-                .fa-angle-right{
+                .fa-angle-right {
                     float: right;
-                    
                 }
             }
 
             // Danh sách hãng
-            ul{
+            ul {
                 overflow-y: auto;
                 margin: 0 auto;
                 width: 95%;
                 border-top: 1px solid cadetblue;
                 padding-left: 1em;
                 padding-bottom: 1em;
-                .manufacturer-main{
+                .manufacturer-main {
                     margin-top: 10px;
                     display: block;
                     position: relative;
@@ -50,14 +49,14 @@
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
-                    input{
+                    input {
                         position: absolute;
                         opacity: 0;
                         cursor: pointer;
                         height: 0;
                         width: 0;
                     }
-                    .checkmark{
+                    .checkmark {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -66,19 +65,19 @@
                         background-color: #eee;
                     }
                     .checkmark:after {
-                        content: "";
+                        content: '';
                         position: absolute;
                         display: none;
-                      }
+                    }
                 }
                 .manufacturer-main input:checked ~ .checkmark {
-                    background-color: #2196F3;
+                    background-color: #2196f3;
                 }
-        
+
                 .manufacturer-main input:checked ~ .checkmark:after {
                     display: block;
-                  }
-                
+                }
+
                 .manufacturer-main .checkmark:after {
                     left: 8px;
                     top: 4px;
@@ -95,7 +94,7 @@
     }
 
     // Danh sách sản phẩm
-    .all-products{
+    .all-products {
         width: 80%;
         display: grid;
         grid-template-columns: 24.3% 24.3% 24.3% 24.3%;
@@ -103,40 +102,38 @@
         grid-row-gap: 0.5em;
 
         // Từng sản phẩm trong danh sách
-        .list-all-products{
+        .list-all-products {
             position: relative;
-            .card{
+            .card {
                 border-radius: 0px;
                 text-decoration: none;
 
                 // Sản phẩm
-                .body-card{
-
+                .body-card {
                     // Tiêu đề sản phẩm
-                    .card-body{
+                    .card-body {
                         height: 110px;
-                        .card-title{
+                        .card-title {
                             color: black;
                             font-family: Roboto;
                             font-size: 1.1em;
                             height: 2.5em;
                             overflow: hidden;
-                            
                         }
-                        .card-text{
+                        .card-text {
                             font-size: 1.2em;
                             color: #f9495f;
                         }
                     }
 
                     // Hình ảnh
-                    .image-product{
+                    .image-product {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         max-height: 250px;
                         background-color: white;
-                        .card-img-top{
+                        .card-img-top {
                             overflow: hidden;
                             max-width: 228px;
                             max-height: 228px;
@@ -148,7 +145,7 @@
             }
 
             // Nút mua
-            .btn-buy{
+            .btn-buy {
                 display: none;
                 font-size: 1em;
                 font-family: Roboto;
@@ -164,10 +161,9 @@
                 bottom: 7px;
             }
 
-            .card:hover .card-text{
+            .card:hover .card-text {
                 display: none;
             }
-            
         }
     }
 
