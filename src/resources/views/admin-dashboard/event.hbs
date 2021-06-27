@@ -160,12 +160,18 @@
 <script>
     function addEvent() {
         if (document.getElementById('form-add-event').style.display == 'none')
-            document.getElementById('form-add-event').style.display = 'block';
-        else document.getElementById('form-add-event').style.display = 'none';
-        if (document.getElementById('btn-add-event').innerHTML == 'Thêm mới')
-            document.getElementById('btn-add-event').innerHTML = 'Hoàn thành';
+        {
+document.getElementById('form-add-event').style.display = 'block';
+document.getElementById('btn-add-event').innerHTML = 'Hoàn thành'
+        }
+            
         else
-            document.getElementById('btn-add-event').innerHTML = 'Thêm mới';
+        {
+document.getElementById('form-add-event').style.display = 'none';
+document.getElementById('btn-add-event').innerHTML = 'Thêm mới';
+        } 
+       
+            
     }
 </script>
 <script src="/js/dashboard.js"></script>
