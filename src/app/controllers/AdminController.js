@@ -4,6 +4,7 @@ const Event = require('../models/Event');
 const { mongooseToObject } = require('../../tools/mongoose');
 const { countDocuments } = require('../models/Event');
 const path = require('path');
+
 var check;
 
 
@@ -35,7 +36,7 @@ class AdminController {
         const diskStorage = multer.diskStorage({
             destination: (req, file, callback) => {
                 // Định nghĩa nơi file upload sẽ được lưu lại
-                callback(null,path.join(`${__dirname}../../../public/img/banner`));
+                callback(null, path.join(`${__dirname}../../../public/img/banner`));
             },
             filename: (req, file, callback) => {
                 // Mình ví dụ chỉ cho phép tải lên các loại ảnh png & jpg
@@ -49,26 +50,42 @@ class AdminController {
                 callback(null, filename);
             }
         });
-        let uploadFile = multer({storage: diskStorage}).single("addImg");
+        let uploadFile = multer({ storage: diskStorage }).single("addImg");
         uploadFile(req, res, (error) => {
             if (error) {
-              return res.send(`Error when trying to upload: ${error}`);
+                return res.send(`Error when trying to upload: ${error}`);
             }
-          });
-        Event.countDocuments({},function(err,countEvent){
-            console.log(countEvent);
-            const formData =  {
-                link : req.body.inputLink,
-                img : '/img/banner/' + req.file.filename,
-                name : req.body.inputEventName,
+        });
+        // Tiến hành thêm event
+        Event.countDocuments({}, function (err, countEvent) {
+            //console.log(countEvent);
+            const formData = {
+                link: req.body.inputLink,
+                img: '\\img\\banner\\' + req.file.filename,
+                name: req.body.inputEventName,
                 index: countEvent + 1,
             }
             const event = new Event(formData);
-          event.save();
-          res.redirect('/admin/event');
+            event.save();
+            res.redirect('/admin/event');
         });
-         
-          
+
+
+    }
+    delEvent(req,res,next){
+        Event.findOneAndDelete({_id: req.params.id}, function(err,ev)
+        {
+            if(err) console.log(err);
+            var fs = require('fs');
+        fs.unlink(path.join(`${__dirname}..\\..\\..\\public` + ev.img), function (err) {
+         if (err) throw err;
+  
+});
+            console.log('deleted image name: ' + ev.img);
+            res.redirect('back');
+        })
+       
+       
     }
 }
 
