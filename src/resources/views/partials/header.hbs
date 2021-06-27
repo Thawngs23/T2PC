@@ -45,11 +45,7 @@
                     <div id="userDropdown" class="dropdown-user">
                         <a href="#"><i class="fad fa-history"></i> Lịch sử mua hàng</a>
                         {{#if (eq session.User.role 'admin')}}
-<<<<<<< Updated upstream
                         <a href="/admin/dashboard"><i class="fad fa-tools"></i> Quản lí website</a>
-=======
-                        <a href="#"><i class="fad fa-tools"></i> Quản lí website</a>
->>>>>>> Stashed changes
                         {{/if}}
                         {{#if (eq session.User.role 'user')}}
                         <a href="#"><i class="fad fa-user-cog"></i> Chỉnh sửa thông tin cá nhân</a>
@@ -245,7 +241,6 @@
 <script>
     function showUserPanel() {
         document.getElementById("userDropdown").classList.toggle("show");
-        console.log('clicked');
     }
 
     // Close the dropdown if the user clicks outside of it

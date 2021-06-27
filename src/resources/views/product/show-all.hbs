@@ -1,10 +1,16 @@
+<div class="row">
 {{#each products}}
-<div class="card" style="width: 18rem;">
-  <img src="https://drive.google.com/uc?export=view&id={{this.img}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-    <p class="card-text">{{this.price}}</p>
-    <a href="#" class="btn btn-primary">Xem chi tiết</a>
-  </div>
-</div>
-{{/each}}
+     <div class="col-sm-6 col-lg-4  ">
+        <div class="card shadow d-inline-block">
+            <a href="#" class="card-img-wrap">
+             <img src="https://drive.google.com/uc?export=view&id={{this.img}}" class="card-img-top" alt="...">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <a href="#" class="btn btn-success position-absolute bottom-0 start-10" id="nutbam">Xem chi tiết</a>
+                </div>
+            </div>
+         
+        </div>
+   {{/each}}
+   </div>
