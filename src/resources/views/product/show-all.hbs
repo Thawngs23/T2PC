@@ -1,10 +1,73 @@
-{{#each products}}
-<div class="card" style="width: 18rem;">
-  <img src="https://drive.google.com/uc?export=view&id={{this.img}}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-    <p class="card-text">{{this.price}}</p>
-    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+{{!-- Danh sách sản phẩm --}}
+<div class="product-main">
+
+  {{!-- Bộ lọc --}}
+  <div class="filter">
+    <div>BỘ LỌC SẢN PHẨM</div>
+
+    {{!--  --}}
+    <div class="filter-manufacturer">
+
+      {{!-- Chủ đề --}}
+      <div onclick="manufacturer()"class="manufacturer">Hãng sản xuất<i class="fas fa-angle-right"></i></div>
+
+      {{!-- Danh sách lọc theo chủ đề --}}
+      <ul id="main-manufacturer">
+        <label class="manufacturer-main">RAZER
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="manufacturer-main">LG
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="manufacturer-main">T2PC Gaming
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="manufacturer-main">MSI
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="manufacturer-main">ACER
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="manufacturer-main">DELL
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </ul>
+    </div>
   </div>
+
+  {{!-- Danh sách sản phẩm --}}
+  <div class="all-products">
+    {{#each products}}
+    <div class="list-all-products">
+
+      {{!-- sản phẩm --}}
+        <a class="card" href="#">
+
+          {{!-- Thân của thẻ chứa sản phẩm --}}
+          <div class="body-card">
+
+            {{!-- Phần ảnh --}}
+            <div class="image-product">
+              <img src="https://drive.google.com/uc?export=view&id={{this.img}}" class="card-img-top" alt="...">
+            </div>
+
+            {{!-- Phần thông tin và giá --}}
+            <div class="card-body">
+              <h5 class="card-title">{{this.name}}</h5>
+              <p id="money-product" class="card-text">{{this.price}} đ</p>
+            </div>
+          </div>
+        </a>
+
+        {{!-- Nút mua --}}
+        <a class="btn-buy" href="#">Mua ngay</a>
+    </div>
+  {{/each}}
 </div>
-{{/each}}
+</div>
