@@ -105,3 +105,57 @@
         }
     }
 }
+
+
+.discount-products{
+    width: 100%;
+    margin: 0 auto;     
+    .ls-discount{
+        //  Phần title bên trên
+        .ls-discount-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 0;
+            // Hàng kẻ bên trái
+            .line-left{
+                display: flex;
+                width: 35%; 
+                .rectangle{
+                    width: 100%;
+                    height: 11px;
+                    background: #dddfe6;
+
+                }
+                .triangle_down{
+                    border-top: 11px solid #dddfe6;
+                    border-right: 7px solid transparent;
+                }
+            }
+
+            // hàng kẻ bên phải
+            .line-right{
+                display: flex;
+                width: 35%;
+                .rectangle{
+                    width: 100%;
+                    height: 11px;
+                    background: #dddfe6;
+                }
+                .triangle_down-right{
+                    border-bottom: 11px solid #dddfe6;
+                    border-left: 7px solid transparent;
+                }
+            }
+
+            // Title
+            .title-lspd{
+                font-family: Roboto;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+        }
+
+        //Phần danh sách các sản phẩm giảm giá
+    }
+}
