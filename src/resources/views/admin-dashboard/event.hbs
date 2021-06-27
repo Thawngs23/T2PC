@@ -129,8 +129,12 @@
                                     <td>{{this.name}}</td>
                                     <td><img src="{{this.img}}" alt="" style="width: 10em"></td>
                                     <td>{{this.link}}</td>
-                                    <td><button type="button" class="btn btn-danger">Xóa</button>
-                                        <button type="button" class="btn btn-warning">Sửa</button>
+                                    <td>
+                                        <button type="button" style="margin: 1em 1em;" class="btn btn-danger"
+                                            data-bs-toggle="modal" data-bs-target="#modalXoa"
+                                            data-bs-eventID='{{this._id}}'>Xóa</button>
+                                        <button type="button" style="margin: 1em 1em;"
+                                            class="btn btn-warning">Sửa</button>
                                     </td>
                                 </tr>
                                 {{/each}}
@@ -139,6 +143,24 @@
                     </div>
                 </div>
 
+            </div>
+            <!-- Modal xóa -->
+            <div class="modal fade" id="modalXoa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cảnh báo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Bạn chắc chắn muốn xóa sự kiện này ? Sự kiện sẽ bị xóa vĩnh viễn
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                            <button type="button" id="btn-delete-event" class="btn btn-danger">Chắc chắn! Xóa</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
@@ -154,7 +176,16 @@
             </div>
         </footer>
     </div>
+    {{!-- form ẩn để xóa event --}}
+    <form name="form-del-event" method="post"></form>
 </div>
+<script src="/js/dashboard.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+<script src="/js/datatables-simple-demo.js"></script>
+{{else}}
+{{>404}}
+{{/if}}
 <script>
     function addEvent() {
         if (document.getElementById('form-add-event').style.display == 'none') {
@@ -169,11 +200,21 @@
 
 
     }
+
+    var exampleModal = document.getElementById('modalXoa');
+    var eventId;
+    var formDelEvent = document.forms['form-del-event'];
+    var btnEventXoa = document.getElementById('btn-delete-event');
+    exampleModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        eventId = button.getAttribute('data-bs-eventID');
+
+    })
+
+    btnEventXoa.onclick = function () {
+        formDelEvent.action = '/admin/event/' + eventId + '?_method=DELETE';
+        formDelEvent.submit();
+    }
 </script>
-<script src="/js/dashboard.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-<script src="/js/datatables-simple-demo.js"></script>
-{{else}}
-{{>404}}
-{{/if}}

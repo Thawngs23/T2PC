@@ -7,6 +7,7 @@ const Event = new Schema({
     img: String,
     link: String,
     createAt: { type: Date, default: Date.now },
+    updateAt: {type: Date, default: Date.now},
 });
 
 module.exports = mongoose.model('Event', Event);
