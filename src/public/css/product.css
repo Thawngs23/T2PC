@@ -1,29 +1,32 @@
-.product-main {
+.container .product-main {
+  max-width: 1920px;
+  width: 100%;
   display: flex;
+  justify-content: center;
   justify-content: space-between;
   margin-top: 1em;
   padding: 0; }
-  .product-main .filter {
+  .container .product-main .filter {
     width: 19%; }
-    .product-main .filter .filter-manufacturer {
+    .container .product-main .filter .filter-manufacturer {
       background-color: #f0f3fc;
       margin-top: 10px; }
-      .product-main .filter .filter-manufacturer .manufacturer {
+      .container .product-main .filter .filter-manufacturer .manufacturer {
         padding: 10px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         cursor: pointer; }
-        .product-main .filter .filter-manufacturer .manufacturer .fa-angle-right {
+        .container .product-main .filter .filter-manufacturer .manufacturer .fa-angle-right {
           float: right; }
-      .product-main .filter .filter-manufacturer ul {
+      .container .product-main .filter .filter-manufacturer ul {
         overflow-y: auto;
         margin: 0 auto;
         width: 95%;
         border-top: 1px solid cadetblue;
         padding-left: 1em;
         padding-bottom: 1em; }
-        .product-main .filter .filter-manufacturer ul .manufacturer-main {
+        .container .product-main .filter .filter-manufacturer ul .manufacturer-main {
           margin-top: 10px;
           display: block;
           position: relative;
@@ -36,28 +39,28 @@
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none; }
-          .product-main .filter .filter-manufacturer ul .manufacturer-main input {
+          .container .product-main .filter .filter-manufacturer ul .manufacturer-main input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
             height: 0;
             width: 0; }
-          .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark {
+          .container .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark {
             position: absolute;
             top: 0;
             left: 0;
             height: 20px;
             width: 20px;
             background-color: #eee; }
-          .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark:after {
+          .container .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark:after {
             content: "";
             position: absolute;
             display: none; }
-        .product-main .filter .filter-manufacturer ul .manufacturer-main input:checked ~ .checkmark {
+        .container .product-main .filter .filter-manufacturer ul .manufacturer-main input:checked ~ .checkmark {
           background-color: #2196F3; }
-        .product-main .filter .filter-manufacturer ul .manufacturer-main input:checked ~ .checkmark:after {
+        .container .product-main .filter .filter-manufacturer ul .manufacturer-main input:checked ~ .checkmark:after {
           display: block; }
-        .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark:after {
+        .container .product-main .filter .filter-manufacturer ul .manufacturer-main .checkmark:after {
           left: 8px;
           top: 4px;
           width: 5px;
@@ -67,41 +70,42 @@
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
-  .product-main .all-products {
+  .container .product-main .all-products {
     width: 80%;
+    margin-top: 0;
     display: grid;
     grid-template-columns: 24.3% 24.3% 24.3% 24.3%;
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em; }
-    .product-main .all-products .list-all-products {
+    .container .product-main .all-products .list-all-products {
       position: relative; }
-      .product-main .all-products .list-all-products .card {
+      .container .product-main .all-products .list-all-products .card {
         border-radius: 0px;
         text-decoration: none; }
-        .product-main .all-products .list-all-products .card .body-card .card-body {
+        .container .product-main .all-products .list-all-products .card .body-card .card-body {
           height: 110px; }
-          .product-main .all-products .list-all-products .card .body-card .card-body .card-title {
+          .container .product-main .all-products .list-all-products .card .body-card .card-body .card-title {
             color: black;
             font-family: Roboto;
             font-size: 1.1em;
             height: 2.5em;
             overflow: hidden; }
-          .product-main .all-products .list-all-products .card .body-card .card-body .card-text {
+          .container .product-main .all-products .list-all-products .card .body-card .card-body .card-text {
             font-size: 1.2em;
             color: #f9495f; }
-        .product-main .all-products .list-all-products .card .body-card .image-product {
+        .container .product-main .all-products .list-all-products .card .body-card .image-product {
           display: flex;
           align-items: center;
           justify-content: center;
           max-height: 250px;
           background-color: white; }
-          .product-main .all-products .list-all-products .card .body-card .image-product .card-img-top {
+          .container .product-main .all-products .list-all-products .card .body-card .image-product .card-img-top {
             overflow: hidden;
             max-width: 228px;
             max-height: 228px;
             width: auto;
             height: auto; }
-      .product-main .all-products .list-all-products .btn-buy {
+      .container .product-main .all-products .list-all-products .btn-buy {
         display: none;
         font-size: 1em;
         font-family: Roboto;
@@ -115,9 +119,9 @@
         left: 10px;
         position: absolute;
         bottom: 7px; }
-      .product-main .all-products .list-all-products .card:hover .card-text {
+      .container .product-main .all-products .list-all-products .card:hover .card-text {
         display: none; }
-  .product-main .list-all-products:hover .btn-buy {
+  .container .product-main .list-all-products:hover .btn-buy {
     display: block; }
-  .product-main .list-all-products:hover .card {
+  .container .product-main .list-all-products:hover .card {
     background-color: #49b14d; }
