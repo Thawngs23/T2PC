@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const Event = new Schema({
     name: String,
+    index: Number,
     img: String,
     link: String,
     createAt: { type: Date, default: Date.now },

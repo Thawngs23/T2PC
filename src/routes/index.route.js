@@ -8,8 +8,8 @@ function route(app) {
     app.use('/', siteRouter);
     app.use('/news', newsRouter);
     app.use('/account', accountRouter);
-    app.use('/admin',adminRouter);
-    app.use('/product',productRouter);
+    app.use('/admin', adminRouter);
+    app.use('/product', productRouter);
 }
 
 module.exports = route;

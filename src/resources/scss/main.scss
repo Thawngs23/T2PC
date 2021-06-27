@@ -1,50 +1,48 @@
-@import "var";
+@import 'var';
 
 // danh mục sản phẩm
-.container-product{
+.container-product {
     width: 100%;
-    margin: 0 auto;     
-    .ls-product{
-
+    margin: 0 auto;
+    .ls-product {
         //  Phần title bên trên
-        .ls-product-top{
+        .ls-product-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 2em 0;
             // Hàng kẻ bên trái
-            .line-left{
+            .line-left {
                 display: flex;
-                width: 35%; 
-                .rectangle{
+                width: 35%;
+                .rectangle {
                     width: 100%;
                     height: 11px;
                     background: #dddfe6;
-
                 }
-                .triangle_down{
+                .triangle_down {
                     border-top: 11px solid #dddfe6;
                     border-right: 7px solid transparent;
                 }
             }
 
             // hàng kẻ bên phải
-            .line-right{
+            .line-right {
                 display: flex;
                 width: 35%;
-                .rectangle{
+                .rectangle {
                     width: 100%;
                     height: 11px;
                     background: #dddfe6;
                 }
-                .triangle_down-right{
+                .triangle_down-right {
                     border-bottom: 11px solid #dddfe6;
                     border-left: 7px solid transparent;
                 }
             }
 
             // Title
-            .title-lspd{
+            .title-lspd {
                 font-family: Roboto;
                 font-weight: bold;
                 font-size: 1.5em;
@@ -52,28 +50,28 @@
         }
 
         // Các mục của ls product
-        .ls-product-main{
+        .ls-product-main {
             display: grid;
             grid-column-gap: 30px;
             grid-row-gap: 30px;
             grid-template-columns: 23% 23% 23% 23%;
             grid-template-rows: 8em 8em;
-            a{
+            a {
                 position: relative;
                 overflow: hidden;
                 text-decoration: none;
                 font-family: Roboto;
                 font-size: 1.2em;
                 background-color: $main-color;
-                .detail-lspm{
+                .detail-lspm {
                     display: flex;
                     padding: 1em 0 1em 1em;
                     color: white;
-                    .tilte-lspm{
+                    .tilte-lspm {
                         position: relative;
                         z-index: 1;
                     }
-                    img{
+                    img {
                         position: absolute;
                         top: 10%;
                         left: 60%;
@@ -83,7 +81,7 @@
                         height: auto;
                         z-index: 1;
                     }
-                    .shape{
+                    .shape {
                         border-style: solid;
                         border-width: 0 0 132px 34.656px;
                         position: absolute;
@@ -94,11 +92,11 @@
                     }
                 }
             }
-            a:hover img{
+            a:hover img {
                 left: 52%;
                 transition-duration: 0.3s;
             }
-            a:hover .shape{
+            a:hover .shape {
                 left: 42%;
                 transition-duration: 0.3s;
             }
@@ -106,50 +104,48 @@
     }
 }
 
-
-.discount-products{
+.discount-products {
     width: 100%;
-    margin: 0 auto;     
-    .ls-discount{
+    margin: 0 auto;
+    .ls-discount {
         //  Phần title bên trên
-        .ls-discount-top{
+        .ls-discount-top {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 2em 0;
             // Hàng kẻ bên trái
-            .line-left{
+            .line-left {
                 display: flex;
-                width: 35%; 
-                .rectangle{
+                width: 35%;
+                .rectangle {
                     width: 100%;
                     height: 11px;
                     background: #dddfe6;
-
                 }
-                .triangle_down{
+                .triangle_down {
                     border-top: 11px solid #dddfe6;
                     border-right: 7px solid transparent;
                 }
             }
 
             // hàng kẻ bên phải
-            .line-right{
+            .line-right {
                 display: flex;
                 width: 35%;
-                .rectangle{
+                .rectangle {
                     width: 100%;
                     height: 11px;
                     background: #dddfe6;
                 }
-                .triangle_down-right{
+                .triangle_down-right {
                     border-bottom: 11px solid #dddfe6;
                     border-left: 7px solid transparent;
                 }
             }
 
             // Title
-            .title-lspd{
+            .title-lspd {
                 font-family: Roboto;
                 font-weight: bold;
                 font-size: 1.5em;

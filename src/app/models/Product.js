@@ -8,7 +8,7 @@ const Product = new Schema({
     producer: { type: String, maxLength: 6 },
     price: { type: Number },
     createAt: { type: Date, default: Date.now },
-    updateAt:  { type: Date, default: Date.now },
+    updateAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('Product', Product);
