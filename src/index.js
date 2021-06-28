@@ -10,6 +10,8 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
 var cookieParser = require('cookie-parser');
+const multer = require('multer');
+
 
 app.use(cookieParser());
 app.use(methodOverride('_method'));
@@ -27,8 +29,11 @@ app.use(function (req, res, next) {
 });
 db.connect();
 //middleware
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
+
 route(app);
 app.engine(
     'hbs',

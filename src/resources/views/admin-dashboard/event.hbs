@@ -125,7 +125,7 @@
                             <tbody>
                                 {{#each events}}
                                 <tr>
-                                    <td>{{this.index}}</td>
+                                    <td>{{sum @index 1}}</td>
                                     <td>{{this.name}}</td>
                                     <td><img src="{{this.img}}" alt="" style="width: 10em"></td>
                                     <td>{{this.link}}</td>
@@ -133,8 +133,10 @@
                                         <button type="button" style="margin: 1em 1em;" class="btn btn-danger"
                                             data-bs-toggle="modal" data-bs-target="#modalXoa"
                                             data-bs-eventID='{{this._id}}'>Xóa</button>
-                                        <button type="button" style="margin: 1em 1em;"
-                                            class="btn btn-warning">Sửa</button>
+                                        <button type="button" style="margin: 1em 1em;" class="btn btn-warning"
+                                            data-bs-toggle="modal" data-bs-target="#modalCapNhat"
+                                            data-bs-eventID='{{this._id}}' data-bs-eventName='{{this.name}}'
+                                            data-bs-eventLink={{this.link}} data-bs-eventImg={{this.img}}>Sửa</button>
                                     </td>
                                 </tr>
                                 {{/each}}
@@ -158,6 +160,47 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
                             <button type="button" id="btn-delete-event" class="btn btn-danger">Chắc chắn! Xóa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{!-- Modal update sự kiện --}}
+            <div class="modal fade" id="modalCapNhat" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Cập nhật sự kiện đang diễn ra</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form name='form-update-event' method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="mb-3 col">
+                                        <label for="update-name" class="col-form-label">Tên sự kiện</label>
+                                        <input type="text" name="updateName" class="form-control" id="update-name">
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="update-link" class="col-form-label">đường link</label>
+                                        <input type="text" name="updateLink" class="form-control" id="update-link">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col">
+                                        <label for="updateImg" class="col-form-label">Hình ảnh banner</label>
+                                        <input type="file" name="updateImg" class="form-control" id="updateImg">
+                                    </div>
+                                    <div class="mb-3 col">
+                                         
+                                        <img src="" id="currentImg" alt="" style="width: 15em">
+                                    </div>
+                                </div>
+                               
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                             <button type="submit" id="btn-update-event" class="btn btn-warning">Cập nhật</button>
                         </div>
                     </div>
                 </div>
@@ -202,9 +245,12 @@
     }
 
     var exampleModal = document.getElementById('modalXoa');
-    var eventId;
+    var eventId, eventName, eventLink, eventImg;
     var formDelEvent = document.forms['form-del-event'];
     var btnEventXoa = document.getElementById('btn-delete-event');
+    var btnEventUpdate = document.getElementById('btn-update-event');
+    var upModal = document.getElementById('modalCapNhat');
+    var formUpdateEvent = document.forms['form-update-event'];
     exampleModal.addEventListener('show.bs.modal', function (event) {
         // Button that triggered the modal
         var button = event.relatedTarget;
@@ -217,4 +263,21 @@
         formDelEvent.action = '/admin/event/' + eventId + '?_method=DELETE';
         formDelEvent.submit();
     }
+    upModal.addEventListener('show.bs.modal', function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        eventId = button.getAttribute('data-bs-eventID');
+        eventName = button.getAttribute('data-bs-eventName');
+        eventImg = button.getAttribute('data-bs-eventImg');
+        eventLink = button.getAttribute('data-bs-eventLink');
+        document.getElementById('currentImg').src = eventImg;
+        document.getElementById('update-name').value = eventName;
+        document.getElementById('update-link').value = eventLink;
+    }) 
+    btnEventUpdate.onclick = function(){
+      formUpdateEvent.action = '/admin/event/' + eventId + '?_method=PUT';
+      formUpdateEvent.submit();
+    }
+    
 </script>
