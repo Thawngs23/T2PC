@@ -285,6 +285,51 @@
         display: block;
     }
 }
+.account-detail{
+    margin-top: 2em;
+}
+.account-detail-header{
+    height: 20em;
+    #user-avt{
+        width: 10em;
+        height: 10em;
+        position: relative;
+        top: 7em;
+       
+        img{
+            margin-left: 2em;
+            width: 10em;
+        height: 10em;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 3px;
+            border-color: white;
+            background-color: black;
+        }
+        #btn-change-avt{
+            display: none;
+            border: none;
+            width: 2em;
+            height: 2em;
+            border-radius: 3px;
+            background-color: #D1C2BF;
+            position: relative;
+           left: 9em;
+           top: -2.5em;
+           cursor: pointer;
+           text-align: center;
+           p{
+               margin: auto;
+           }
+        }
+    }
+    #user-avt:hover{
+        #btn-change-avt{
+            display: flex;
+            
+        }
+    }
+}
 @media screen and (max-width: 85em) {
     .login-cart {
         .login {

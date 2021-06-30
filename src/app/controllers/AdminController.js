@@ -1,6 +1,7 @@
 const session = require('express-session');
 const Event = require('../models/Event');
 const { mongooseToObject } = require('../../tools/mongoose');
+const { mutipleMongooseToObject } = require('../../tools/mongoose');
 const { countDocuments } = require('../models/Event');
 const path = require('path');
 const multer = require('multer');
@@ -42,7 +43,7 @@ class AdminController {
         Event.find({})
             .then((events) => {
                 res.render('admin-dashboard/event', {
-                    events: mongooseToObject(events),
+                    events: mutipleMongooseToObject(events),
                     check,
                 });
             })
