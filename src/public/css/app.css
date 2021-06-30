@@ -238,7 +238,6 @@
         .account-detail .account-detail-header .account-detail-footer li span {
           font-weight: bold; }
   .account-detail #user-avt {
-    width: 10em;
     height: 10em;
     position: absolute;
     bottom: 2.2em;
@@ -268,7 +267,8 @@
         margin: auto; }
     .account-detail #user-avt .info-acc {
       margin-top: 2.5em;
-      margin-left: 1.5em; }
+      margin-left: 1.5em;
+      width: 200px; }
       .account-detail #user-avt .info-acc p {
         font-weight: bold;
         font-size: 1.25em;
