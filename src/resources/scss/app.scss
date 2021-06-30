@@ -287,47 +287,99 @@
 }
 .account-detail{
     margin-top: 2em;
-}
-.account-detail-header{
-    height: 20em;
-    #user-avt{
-        width: 10em;
-        height: 10em;
+    position: relative;
+    .account-detail-header{
         position: relative;
-        top: 7em;
-       
-        img{
-            margin-left: 2em;
+        height: 18.5em;
+        .bg-user{
+            height: 85%;
+            width: 100%;
+            overflow: hidden;
+            .change-bg-acc{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                border-radius: 5px;
+                border: 0;
+            }
+            img{
+                max-width: 100%;
+                // height: 80%;
+                width: auto;
+                height: auto;
+            }
+        }
+    
+        #user-avt{
             width: 10em;
-        height: 10em;
-            border-radius: 50%;
-            border-style: solid;
-            border-width: 3px;
-            border-color: white;
-            background-color: black;
-        }
-        #btn-change-avt{
-            display: none;
-            border: none;
-            width: 2em;
-            height: 2em;
-            border-radius: 3px;
-            background-color: #D1C2BF;
-            position: relative;
-           left: 9em;
-           top: -2.5em;
-           cursor: pointer;
-           text-align: center;
-           p{
-               margin: auto;
-           }
-        }
-    }
-    #user-avt:hover{
-        #btn-change-avt{
+            height: 10em;
+            position: absolute;
+            top: 7em;
             display: flex;
+            // align-items: center;
+            .avt-acc{
+                // display: flex;
+                img{
+                    margin-left: 2em;
+                    width: 10em;
+                    height: 10em;
+                    border-radius: 50%;
+                    border-style: solid;
+                    border-width: 3px;
+                    border-color: white;
+                    background-color: black;
+                }
+                #btn-change-avt{
+                    display: none;
+                    border: none;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 3px;
+                    background-color: #D1C2BF;
+                    position: relative;
+                   left: 9em;
+                   top: -2.5em;
+                   cursor: pointer;
+                   text-align: center;
+                   p{
+                       margin: auto;
+                   }
+            }
             
+            }
+    
+            .info-acc{
+                margin-top: 2.5em;
+                margin-left: 1.5em;
+                p{
+                    font-weight: bold;
+                    font-size: 1.25em;
+                    color: white;
+                }
+                // mtop: 50%;
+            }
         }
+        #user-avt:hover{
+            #btn-change-avt{
+                display: flex;
+                
+            }
+        }
+
+        .account-detail-footer{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            bottom: -5px;
+            left: 11.5em;
+            li{
+                margin-right: 10px;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+
     }
 }
 @media screen and (max-width: 85em) {
